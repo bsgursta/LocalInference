@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+alembic_bk
+
+compose.yaml
+Dockerfile
+startup.sh
