@@ -9,7 +9,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - postgres_data:/var/lib/postgresql
+      - li_postgres_data:/var/lib/postgresql
     environment:
       POSTGRES_PASSWORD: party
 
@@ -34,13 +34,14 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./frontend:/frontend
-      - /frontend/node_modules
+      - li_node_modules:/frontend/node_modules
     command: npm run dev -- --host
     ports:
       - 5173:5173
     
 volumes:
-  postgres_data:
+  li_postgres_data:
+  li_node_modules:
 
 
   # redis-db:
