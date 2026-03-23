@@ -1,44 +1,36 @@
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s:     %(name)s - %(message)s"
+)
+import asyncio
 from typing import Optional, Union, Annotated
-
-"""
-    Optional[type(s)]
-    Union() or (type | None)
-    Annotated[type, "annotation textr"]
-"""
 from fastapi import FastAPI, Header
 from fastapi.middleware.cors import CORSMiddleware
 from src.auth.auth_routes import auth_router
-from src.root_routes import root_router
 from src.config import Settings
 from src.db.main import init_db
 
+from src.root_routes import root_router
+from src.socket.socket_routes import socket_router
 from contextlib import asynccontextmanager
-
+from src.socket.mcu_socket import mcu_manager
 
 @asynccontextmanager
 async def life_span(app: FastAPI):
     print("Server is starting...")
-
-    # If we want to autogenerate the DB based on our SQLModels
-    # Using Alembic instead to manage DB updates
-    # await init_db()
+    asyncio.create_task(mcu_manager.start())
 
     yield
     print("Server has been stopped...")
+    await mcu_manager.stop()
 
-
-# api_version = "v1"
-# s = Settings()
-# print(s.DB_URL)
-
-# app = FastAPI(version=api_version)
 app = FastAPI(
     title="Portfolio",
     description="My portfolio & community for friends",
     lifespan=life_span,
 )
 
-# app.include_router(router=router, prefix=f"/{api_version}/user")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
@@ -48,5 +40,5 @@ app.add_middleware(
 )
 app.include_router(router=auth_router, prefix="/auth")
 app.include_router(router=root_router, prefix="")
-# app.include_router(router=product_router, prefix="/products")
-# app.include_router(router=member_router, prefix="/member")
+app.include_router(router=socket_router, prefix="/mcu")
+
