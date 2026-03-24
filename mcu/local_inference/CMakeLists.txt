@@ -1,22 +1,23 @@
 cmake_minimum_required(VERSION 3.22)
-include(ExternalProject)
 
-#
-# This file is generated only once,
-# and is not re-generated if converter is called multiple times.
-#
-# User is free to modify the file as much as necessary
-#
+project(${CMAKE_PROJECT_NAME} C CXX ASM)
 
-# In order to use CMake for cross-compiling
-set(CMAKE_CXX_COMPILER_FORCED "true")
-
-# Set the project name
-set(CMAKE_PROJECT_NAME local_inference)
-
-# Core project settings
-project(${CMAKE_PROJECT_NAME})
-
-# Include external project file
 include("mx-generated.cmake")
 
+set(MY_APP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../my_app")
+
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
+    ${MY_APP_DIR}/inc
+    Middlewares/ST/threadx/common/inc
+    Middlewares/ST/threadx/ports/cortex_m55/gnu/inc
+)
+
+file(GLOB_RECURSE USER_SOURCES "${MY_APP_DIR}/src/*.cpp" "${MY_APP_DIR}/src/*.c")
+
+target_sources(${CMAKE_PROJECT_NAME} PRIVATE
+    ${USER_SOURCES}
+)
+
+target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
+    USE_EXTERNAL_APP
+)
