@@ -1,0 +1,24 @@
+# ninja log v5
+1	20	1774329146009778278	CMakeFiles/local_inference_FSBL.dir/Core/Startup/startup_stm32n657xx_fsbl.s.obj	6c9c4fd80864bd79
+1	89	1774329146079319959	CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj	628d9004ff0fb3ef
+1	116	1774329146102925090	CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj	a8e2daa17315175d
+1	815	1774329146798802684	CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj	10bbe7388cbb202f
+4	835	1774329146819803334	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj	e823259b4fe429c
+20	877	1774329146860804602	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj	48c284814baad6ea
+1	1315	1774329147292817965	CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj	7867fdf25dc894c
+2	1375	1774329147339819419	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj	31994b591ff592d6
+1	1386	1774329147355819914	CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj	5227ad538d29862c
+816	1407	1774329147392821058	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj	e5733e0595d1573
+2	1427	1774329147396821182	CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj	27f709a84a7ac159
+2	1611	1774329147587827090	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj	364a5e4bbbc16d38
+116	1642	1774329147610827802	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj	6587ed8b8dd6ae62
+7	1750	1774329147716831080	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj	efbfb2e5576f8a0
+4	1857	1774329147842834978	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj	9799b81832901ec5
+8	1895	1774329147878836091	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj	dd3501de4f146aa9
+89	1965	1774329147945838164	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj	eaa76f6e33fa65b0
+877	2026	1774329148000839865	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj	cc074fc813c3feab
+835	2177	1774329148158844752	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj	25bfa6e780ca76a
+1375	2187	1774329148172845185	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj	828914b496bfd6de
+3	2221	1774329148204846175	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj	781d725e263a8984
+1315	2541	1774329148525856104	CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj	65f84f3509f44021
+2541	2760	1774329148745862909	local_inference_FSBL.elf	bcf865594e7f9d04

@@ -1,0 +1,4 @@
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/FSBL/build/CMakeFiles/local_inference_FSBL.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/FSBL/build/CMakeFiles/STM32_Drivers.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/FSBL/build/CMakeFiles/edit_cache.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/FSBL/build/CMakeFiles/rebuild_cache.dir

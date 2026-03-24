@@ -1,0 +1,13 @@
+# Target labels
+ local_inference_FSBL
+# Source files and their labels
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_FSBL
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_FSBL.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_FSBL-complete.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-build.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-configure.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-download.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-install.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-mkdir.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-patch.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/FSBL/src/local_inference_FSBL-stamp/local_inference_FSBL-update.rule

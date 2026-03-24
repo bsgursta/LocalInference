@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli-complete.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-build.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-configure.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-download.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-install.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-mkdir.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-patch.rule"
+		},
+		{
+			"file" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"local_inference_Appli"
+		],
+		"name" : "local_inference_Appli"
+	}
+}

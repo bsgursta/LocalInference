@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "local_inference",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "local_inference_Appli::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-local_inference_Appli-Debug-3f8310f0701abf2fd5b6.json",
+					"name" : "local_inference_Appli",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "local_inference_FSBL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-local_inference_FSBL-Debug-2dfecd8c718bdc5c8bc4.json",
+					"name" : "local_inference_FSBL",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug",
+		"source" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

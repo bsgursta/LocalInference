@@ -1,0 +1,13 @@
+# Target labels
+ local_inference_Appli
+# Source files and their labels
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/local_inference_Appli-complete.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-build.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-configure.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-download.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-install.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-mkdir.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-patch.rule
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/Appli/src/local_inference_Appli-stamp/local_inference_Appli-update.rule

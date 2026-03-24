@@ -1,0 +1,6 @@
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/local_inference_Appli.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/STM32_Drivers.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/netxduo.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/threadx.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/edit_cache.dir
+/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Appli/build/CMakeFiles/rebuild_cache.dir
