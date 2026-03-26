@@ -14,16 +14,15 @@ from src.db.main import init_db
 from src.root_routes import root_router
 from src.socket.socket_routes import socket_router
 from contextlib import asynccontextmanager
-from src.socket.mcu_socket import mcu_manager
+from src.socket.mcu_socket import start_socket_server
 
 @asynccontextmanager
 async def life_span(app: FastAPI):
     print("Server is starting...")
-    asyncio.create_task(mcu_manager.start())
+    asyncio.create_task(start_socket_server())
 
     yield
     print("Server has been stopped...")
-    await mcu_manager.stop()
 
 app = FastAPI(
     title="Portfolio",

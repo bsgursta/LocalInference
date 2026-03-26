@@ -20,6 +20,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8000:8000
+      - 9999:9999
     volumes:
       - ./backend:/server
     env_file:
@@ -27,17 +28,17 @@ services:
     depends_on:
       - li-pgsql-db
 
-  li-frontend-tsx:
-    container_name: li-frontend
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    volumes:
-      - ./frontend:/frontend
-      - li_node_modules:/frontend/node_modules
-    command: npm run dev -- --host
-    ports:
-      - 5173:5173
+  # li-frontend-tsx:
+  #   container_name: li-frontend
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - ./frontend:/frontend
+  #     - li_node_modules:/frontend/node_modules
+  #   command: npm run dev -- --host
+  #   ports:
+  #     - 5173:5173
     
 volumes:
   li_postgres_data:
