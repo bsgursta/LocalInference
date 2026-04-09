@@ -32,11 +32,11 @@ rule C_COMPILER__local_inference_Appli_unscanned_Debug
 
 
 #############################################
-# Rule for linking C executable.
+# Rule for linking CXX executable.
 
-rule C_EXECUTABLE_LINKER__local_inference_Appli_Debug
-  command = $PRE_LINK && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking C executable $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__local_inference_Appli_Debug
+  command = $PRE_LINK && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 
@@ -86,6 +86,25 @@ rule C_COMPILER__threadx_unscanned_Debug
 rule CUSTOM_COMMAND
   command = $COMMAND
   description = $DESC
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__my_app_lib_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__my_app_lib_Debug
+  command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
 
 
 #############################################

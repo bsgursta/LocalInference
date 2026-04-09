@@ -8,7 +8,7 @@ events:
       - "CMakeLists.txt:18 (project)"
     message: |
       The target system is: Generic -  - arm
-      The host system is: Linux - 6.17.0-19-generic - x86_64
+      The host system is: Linux - 6.17.0-20-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -122,8 +122,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-4653g2"
-      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-4653g2"
+      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7lXixt"
+      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7lXixt"
     cmakeVariables:
       CMAKE_C_FLAGS: "  -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections"
       CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
@@ -132,10 +132,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-4653g2'
+        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7lXixt'
         
-        Run Build Command(s): /tools/Xilinx/2025.1/Vivado/bin/ninja -v cmTC_c7e69
-        [1/2] /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /tools/Xilinx/2025.1/Vivado/bin/ninja -v cmTC_bd786
+        [1/2] /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -143,8 +143,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.3.1 20250623 (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/'
-         /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c7e69.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/cctDISbC.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/'
+         /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bd786.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/cc5MX5mi.s
         GNU C17 (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) version 14.3.1 20250623 (arm-none-eabi)
         	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2), GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -161,13 +161,13 @@ events:
          /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: f1c6d1095e4a9f51a2e062da29cb95b2
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/'
-         /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj /tmp/cctDISbC.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/'
+         /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj /tmp/cc5MX5mi.s
         GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 2.44.0.20250616
         COMPILER_PATH=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_c7e69.a && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_c7e69.a  CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_c7e69.a && :
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cmake -E rm -f libcmTC_bd786.a && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_bd786.a  CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_bd786.a && :
         
       exitCode: 0
   -
@@ -199,10 +199,10 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-4653g2']
+        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-7lXixt']
         ignore line: []
-        ignore line: [Run Build Command(s): /tools/Xilinx/2025.1/Vivado/bin/ninja -v cmTC_c7e69]
-        ignore line: [[1/2] /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /tools/Xilinx/2025.1/Vivado/bin/ninja -v cmTC_bd786]
+        ignore line: [[1/2] /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -210,8 +210,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.3.1 20250623 (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/']
-        ignore line: [ /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c7e69.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/cctDISbC.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/']
+        ignore line: [ /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi -D__USES_INITFINI__ /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_bd786.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/cc5MX5mi.s]
         ignore line: [GNU C17 (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) version 14.3.1 20250623 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 9.2.1 20191120 (Red Hat 9.2.1-2)  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -228,13 +228,13 @@ events:
         ignore line: [ /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f1c6d1095e4a9f51a2e062da29cb95b2]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/']
-        ignore line: [ /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj /tmp/cctDISbC.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/']
+        ignore line: [ /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj /tmp/cc5MX5mi.s]
         ignore line: [GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (Arm GNU Toolchain 14.3.Rel1 (Build arm-14.174)) 2.44.0.20250616]
         ignore line: [COMPILER_PATH=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/arm-none-eabi/14.3.1/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../libexec/gcc/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_c7e69.a && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_c7e69.a  CMakeFiles/cmTC_c7e69.dir/CMakeCCompilerABI.c.obj && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_c7e69.a && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cmake -E rm -f libcmTC_bd786.a && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ar qc libcmTC_bd786.a  CMakeFiles/cmTC_bd786.dir/CMakeCCompilerABI.c.obj && /opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-ranlib libcmTC_bd786.a && :]
         ignore line: []
         ignore line: []
         implicit libs: []
