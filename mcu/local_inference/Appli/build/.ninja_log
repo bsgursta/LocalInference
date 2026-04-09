@@ -1370,3 +1370,6 @@
 5467	5958	1775707002486267115	my_app_build/CMakeFiles/my_app_lib.dir/src/threadx_threads.cpp.obj	33f9d21439876a23
 5959	6003	1775707002535498141	my_app_build/libmy_app_lib.a	390192939c199bf1
 6003	6511	1775707003022284316	local_inference_Appli.elf	5356b85bdbd34ad0
+21	726	1775710770274086598	my_app_build/CMakeFiles/my_app_lib.dir/src/threadx_threads.cpp.obj	33f9d21439876a23
+726	757	1775710770308823067	my_app_build/libmy_app_lib.a	390192939c199bf1
+757	1579	1775710771107110006	local_inference_Appli.elf	5356b85bdbd34ad0
