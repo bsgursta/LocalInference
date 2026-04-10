@@ -1035,10 +1035,10 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "UNINITIALIZED",
 			"value" : "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/gcc-arm-none-eabi.cmake"
 		},
 		{
