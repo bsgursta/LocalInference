@@ -39,20 +39,6 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Include mx-generated
 include("mx-generated.cmake")
 
-# Add the external my_app library
-# Path logic: ../ (to project root) -> ../ (to Workspace) -> my_app
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/../../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
-#Inject, MEEE
-target_include_directories(my_app_lib PRIVATE 
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/threadx/common/inc"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Inc"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/CMSIS/Device/ST/STM32N6xx/Include"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/CMSIS/Include"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Core/Inc"
-)
-
-
 
 # In order to use CMake for cross-compiling
 set(CMAKE_CXX_COMPILER_FORCED "true")
@@ -63,8 +49,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 # Enable CMake support for ASM and C languages
-#enable_language(C ASM) #OLD
-enable_language(C ASM CXX) 
+enable_language(C ASM)
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
@@ -82,9 +67,8 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 # Add linked libraries
-target_link_libraries(${CMAKE_PROJECT_NAME}
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined libraries
-    my_app_lib #Added for outside library
 )
 
 # Remove wrong libob.a library dependency when using cpp files
@@ -94,6 +78,8 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 if((CMAKE_C_STANDARD EQUAL 90) OR (CMAKE_C_STANDARD EQUAL 99))
     message(ERROR "Generated code requires C11 or higher")
 endif()
+
+
 
 
 

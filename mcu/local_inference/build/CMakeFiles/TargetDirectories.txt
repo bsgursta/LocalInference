@@ -1,4 +1,0 @@
-/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/CMakeFiles/local_inference_Appli.dir
-/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/CMakeFiles/local_inference_FSBL.dir
-/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/CMakeFiles/edit_cache.dir
-/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/CMakeFiles/rebuild_cache.dir

@@ -4,8 +4,6 @@ cmake_minimum_required(VERSION 3.22)
 set(MX_Defines_Syms 
 	USE_HAL_DRIVER 
 	STM32N657xx 
-	TX_INCLUDE_USER_DEFINE_FILE 
-	TX_SINGLE_MODE_SECURE=1 
 	USE_NUCLEO_64
     $<$<CONFIG:Debug>:DEBUG>
 )
@@ -15,9 +13,7 @@ set(MX_Include_Dirs
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/CMSIS/Device/ST/STM32N6xx/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/threadx/common/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/BSP/STM32N6xx_Nucleo
-    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/threadx/ports/cortex_m55/gnu/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/CMSIS/Include
 )
 # STM32CubeMX generated application sources
