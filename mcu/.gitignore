@@ -1,4 +1,4 @@
 /.vscode
 /build
-/FSBL/build
-/Appli/build
+/local_inference/FSBL/build
+/local_inference/Appli/build
