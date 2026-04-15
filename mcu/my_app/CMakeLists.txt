@@ -2,7 +2,12 @@ add_library(my_app_lib STATIC
     src/threadx_threads.cpp
 )
 
-# Add the chip definition so the HAL headers know what device this is
-target_compile_definitions(my_app_lib PRIVATE STM32N657xx)
+target_include_directories(my_app_lib PUBLIC 
+    "${PROJECT_SOURCE_DIR}/Core/Inc"
+)
 
-target_include_directories(my_app_lib PUBLIC inc)
+target_link_libraries(my_app_lib PUBLIC 
+    stm32cubemx
+)
+
+

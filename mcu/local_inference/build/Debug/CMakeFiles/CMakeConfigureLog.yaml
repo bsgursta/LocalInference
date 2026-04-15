@@ -21,6 +21,8 @@ events:
       - "uname"
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
@@ -43,6 +45,8 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/uname"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/uname"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/uname"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/uname"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/uname"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/uname"
@@ -61,6 +65,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -113,6 +119,8 @@ events:
       - "samu"
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
@@ -137,11 +145,19 @@ events:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ninja-build"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ninja"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/samu"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/ninja-build"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/ninja"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/samu"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/ninja-build"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/ninja"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/samu"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja-build"
     found: "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja"
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -185,6 +201,8 @@ events:
       - "arm-none-eabi-gcc"
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
@@ -207,11 +225,15 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc"
     found: "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc"
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -262,6 +284,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -342,6 +366,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -409,6 +435,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -432,6 +460,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -477,6 +507,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -500,6 +532,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -545,6 +579,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -568,6 +604,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -613,6 +651,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -636,6 +676,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -681,6 +723,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -704,6 +748,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -749,6 +795,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -772,6 +820,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -817,6 +867,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -840,6 +892,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -885,6 +939,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -907,6 +963,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-dlltool"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-dlltool"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-dlltool"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-dlltool"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-dlltool"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-dlltool"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-dlltool"
@@ -928,6 +986,8 @@ events:
       - "/snap/bin/arm-none-eabi-dlltool"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/dlltool"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/dlltool"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/dlltool"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/dlltool"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/dlltool"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/dlltool"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/dlltool"
@@ -951,6 +1011,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -996,6 +1058,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1019,6 +1083,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1064,6 +1130,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1086,6 +1154,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-tapi"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-tapi"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-tapi"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-tapi"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-tapi"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-tapi"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-tapi"
@@ -1107,6 +1177,8 @@ events:
       - "/snap/bin/arm-none-eabi-tapi"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/tapi"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/tapi"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/tapi"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/tapi"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/tapi"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/tapi"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/tapi"
@@ -1130,6 +1202,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1177,6 +1251,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1199,6 +1275,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar-14.3"
@@ -1220,6 +1298,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar-14"
@@ -1241,6 +1321,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar14"
@@ -1264,6 +1346,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1311,6 +1395,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1333,6 +1419,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib-14.3"
@@ -1354,6 +1442,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib-14"
@@ -1375,6 +1465,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib14"
@@ -1398,6 +1490,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1441,6 +1535,8 @@ events:
       - "arm-none-eabi-g++"
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
@@ -1463,11 +1559,15 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-g++"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-g++"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-g++"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-g++"
     found: "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-g++"
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1518,6 +1618,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1598,6 +1700,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1667,6 +1771,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1689,6 +1795,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar-14.3"
@@ -1710,6 +1818,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ar-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar-14"
@@ -1731,6 +1841,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ar-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ar14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ar14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ar14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ar14"
@@ -1754,6 +1866,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1801,6 +1915,8 @@ events:
     candidate_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/"
@@ -1823,6 +1939,8 @@ events:
     searched_directories:
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib-14.3"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib-14.3"
@@ -1844,6 +1962,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ranlib-14.3"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib-14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib-14"
@@ -1865,6 +1985,8 @@ events:
       - "/snap/bin/arm-none-eabi-gcc-ranlib-14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/arm-none-eabi-gcc-ranlib14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin/arm-none-eabi-gcc-ranlib14"
+      - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64/arm-none-eabi-gcc-ranlib14"
       - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64/arm-none-eabi-gcc-ranlib14"
@@ -1888,6 +2010,8 @@ events:
     search_context:
       ENV{PATH}:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/stlink-gdbserver/7.13.0+st.3/bin"
+        - "/home/bsgursta/.local/share/stm32cube/bundles/programmer/2.22.0+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
@@ -1919,8 +2043,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-lJBk6z"
-      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-lJBk6z"
+      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK"
+      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK"
     cmakeVariables:
       CMAKE_C_FLAGS: "  -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections"
       CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
@@ -1929,10 +2053,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-lJBk6z'
+        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK'
         
-        Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_8c437
-        [1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_b544d
+        [1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -1940,8 +2064,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.3.1 20250623 (GNU Tools for STM32 14.3.rel1.20251027-0700) 
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/'
-         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c437.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccbiaG0v.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/'
+         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b544d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccYkErMy.s
         GNU C17 (GNU Tools for STM32 14.3.rel1.20251027-0700) version 14.3.1 20250623 (arm-none-eabi)
         	compiled by GNU C version 7.5.0, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -1958,13 +2082,13 @@ events:
          /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 91583cfdc8b970f823bfd284aa7769b4
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/'
-         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj /tmp/ccbiaG0v.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/'
+         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj /tmp/ccYkErMy.s
         GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 14.3.rel1.20251027-0700) 2.44.0.20250616
         COMPILER_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_8c437.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_8c437.a  CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_8c437.a && :
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_b544d.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_b544d.a  CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_b544d.a && :
         
       exitCode: 0
   -
@@ -1997,10 +2121,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-lJBk6z']
+        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_8c437]
-        ignore line: [[1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_b544d]
+        ignore line: [[1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -2008,8 +2132,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.3.1 20250623 (GNU Tools for STM32 14.3.rel1.20251027-0700) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/']
-        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c437.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccbiaG0v.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/']
+        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b544d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccYkErMy.s]
         ignore line: [GNU C17 (GNU Tools for STM32 14.3.rel1.20251027-0700) version 14.3.1 20250623 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -2026,13 +2150,13 @@ events:
         ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 91583cfdc8b970f823bfd284aa7769b4]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/']
-        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj /tmp/ccbiaG0v.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/']
+        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj /tmp/ccYkErMy.s]
         ignore line: [GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 14.3.rel1.20251027-0700) 2.44.0.20250616]
         ignore line: [COMPILER_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_8c437.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_8c437.a  CMakeFiles/cmTC_8c437.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_8c437.a && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_b544d.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_b544d.a  CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_b544d.a && :]
         ignore line: []
         ignore line: []
         implicit libs: []

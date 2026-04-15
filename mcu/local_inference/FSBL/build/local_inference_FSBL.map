@@ -243,7 +243,7 @@ Discarded input sections
                 0x00000000       0x70 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
  .text.MPU_ConfigMemoryAttributes
                 0x00000000       0x66 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
@@ -422,7 +422,7 @@ Discarded input sections
                 0x00000000       0xe4 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
  .text.RCC_ATTR_ConfigItemGroup
                 0x00000000      0x124 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
@@ -671,7 +671,7 @@ Discarded input sections
                 0x00000000        0xe CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
  .text.HAL_RCCEx_PLLSSCGConfig
                 0x00000000      0x1b8 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
@@ -816,7 +816,7 @@ Discarded input sections
                 0x00000000       0x8e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
  .text.HAL_GPIO_GetConfigPinAttributes
                 0x00000000       0x6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
@@ -976,7 +976,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0x91 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
@@ -1032,7 +1032,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_line    0x00000000     0x1765 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
- .debug_str     0x00000000   0x200b6c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
+ .debug_str     0x00000000   0x200b7b CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .debug_frame   0x00000000      0x2e8 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma.c.obj
  .ARM.attributes
@@ -1201,7 +1201,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000      0x155 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
@@ -1257,7 +1257,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_line    0x00000000     0x29b5 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
- .debug_str     0x00000000   0x201139 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
+ .debug_str     0x00000000   0x201148 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .debug_frame   0x00000000      0x70c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_dma_ex.c.obj
  .ARM.attributes
@@ -1379,7 +1379,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0xab CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_macro   0x00000000      0x2b0 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
@@ -1435,7 +1435,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_line    0x00000000      0xbb7 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
- .debug_str     0x00000000   0x2009b2 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
+ .debug_str     0x00000000   0x2009c1 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .debug_frame   0x00000000      0x330 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr.c.obj
  .ARM.attributes
@@ -1634,7 +1634,7 @@ Discarded input sections
                 0x00000000        0xe CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
  .text.HAL_PWREx_ADCVM_Falling_Callback
                 0x00000000        0xe CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
@@ -1977,7 +1977,7 @@ Discarded input sections
                 0x00000000       0x28 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
  .text.HAL_FMC_GetBankSwapConfig
                 0x00000000       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
@@ -2110,7 +2110,7 @@ Discarded input sections
                 0x00000000       0x20 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
  .text.HAL_EXTI_GetLockAttributes
                 0x00000000       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
@@ -2228,7 +2228,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_macro   0x00000000      0x28e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
@@ -2284,7 +2284,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .debug_line    0x00000000      0x843 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
- .debug_str     0x00000000   0x20033c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
+ .debug_str     0x00000000   0x20034b CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
  .ARM.attributes
                 0x00000000       0x3e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart.c.obj
@@ -2351,7 +2351,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_macro   0x00000000      0x28d CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
@@ -2407,7 +2407,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .debug_line    0x00000000      0x846 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
- .debug_str     0x00000000   0x20033f CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
+ .debug_str     0x00000000   0x20034e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
  .ARM.attributes
                 0x00000000       0x3e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_usart_ex.c.obj
@@ -2516,7 +2516,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0x7f CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000      0x299 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
@@ -2572,7 +2572,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xa6 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_macro   0x00000000      0x5fb CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_line    0x00000000      0xda1 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
- .debug_str     0x00000000   0x200de1 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
+ .debug_str     0x00000000   0x200df0 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .comment       0x00000000       0x44 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .debug_frame   0x00000000      0x29c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart_ex.c.obj
  .ARM.attributes
@@ -2761,7 +2761,7 @@ Discarded input sections
                 0x00000000      0x370 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
  .text.UART_RxISR_16BIT_FIFOEN
                 0x00000000      0x378 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
@@ -2916,7 +2916,7 @@ Discarded input sections
                 0x00000000       0x38 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
  .text.UART_MspDeInit
                 0x00000000       0xb0 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
@@ -3040,7 +3040,7 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
  .data          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
  .bss           0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x63 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
@@ -3172,7 +3172,7 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
  .data          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
  .bss           0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
  .debug_macro   0x00000000       0x16 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
@@ -3307,7 +3307,7 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
  .data          0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
  .bss           0x00000000        0x0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
  .debug_macro   0x00000000       0x16 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
  .debug_macro   0x00000000      0x1d3 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
  .debug_macro   0x00000000      0x190 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
@@ -3407,7 +3407,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0x13 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000      0x103 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000       0x10 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000       0x6e CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
@@ -3429,7 +3429,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_macro   0x00000000      0x1df CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_line    0x00000000      0x35e CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
- .debug_str     0x00000000     0x73a2 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x00000000     0x73b1 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .comment       0x00000000       0x44 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .debug_frame   0x00000000       0x34 CMakeFiles/local_inference_FSBL.dir/Core/Src/sysmem.c.obj
  .ARM.attributes
@@ -3512,7 +3512,7 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0x79 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000      0x265 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00000000      0xb62 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x00000000      0xb6e CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000       0x22 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000       0x6e CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000       0x29 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
@@ -3560,7 +3560,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_macro   0x00000000       0xce CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_line    0x00000000      0x682 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
- .debug_str     0x00000000     0x969d CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00000000     0x96ac CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .comment       0x00000000       0x44 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .debug_frame   0x00000000      0x288 CMakeFiles/local_inference_FSBL.dir/Core/Src/syscalls.c.obj
  .ARM.attributes
@@ -5220,87 +5220,87 @@ LOAD linker stubs
  .debug_rnglists
                 0x000011bd       0x13 /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_macro    0x00000000    0x51e1e
+.debug_macro    0x00000000    0x51e2a
  .debug_macro   0x00000000      0x2a0 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000002a0      0xb62 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000e02       0x2e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000e30       0x6c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000e9c       0x22 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000ebe       0x8e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000f4c       0x51 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00000f9d      0x103 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000010a0       0x6a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0000110a      0x1df CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000012e9       0x2e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00001317       0x17 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0000132e       0x58 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00001386      0x26d CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000015f3       0x3a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0000162d     0x2f0c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00004539      0x130 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00004669      0x344 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000049ad      0x146 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00004af3       0x22 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00004b15    0x3e927 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004343c       0x6c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000434a8      0x1d3 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004367b      0x190 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004380b       0x63 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004386e     0x3486 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00046cf4       0x74 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00046d68       0x29 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00046d91       0x3c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00046dcd       0x34 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00046e01      0x364 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00047165       0x16 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004717b       0x4a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000471c5       0x34 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000471f9       0x10 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00047209       0x58 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00047261      0x1de CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004743f      0x19b CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x000475da       0x72 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004764c      0x47a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00047ac6     0x10fe CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x00048bc4     0x27e2 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004b3a6      0xfd4 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004c37a      0x1af CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004c529      0x2c9 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004c7f2      0x2c4 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004cab6      0xa36 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004d4ec      0x7b2 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004dc9e       0xeb CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004dd89      0x216 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004df9f      0x36b CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004e30a      0x303 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004e60d      0x46a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004ea77      0x693 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004f10a       0xa6 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004f1b0      0x5fb CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
- .debug_macro   0x0004f7ab      0x28e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
- .debug_macro   0x0004fa39      0x311 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
- .debug_macro   0x0004fd4a      0x28d CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
- .debug_macro   0x0004ffd7      0x294 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
- .debug_macro   0x0005026b      0x2db CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
- .debug_macro   0x00050546      0x293 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
- .debug_macro   0x000507d9      0x2a5 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
- .debug_macro   0x00050a7e      0x2b8 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
- .debug_macro   0x00050d36      0x2f4 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x0005102a       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x00051046       0xa0 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x000510e6       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x00051102       0x3c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x0005113e       0x10 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x0005114e       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x0005116a       0x16 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x00051180      0x170 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x000512f0      0x170 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_macro   0x00051460      0x2f0 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_macro   0x00051750       0x16 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_macro   0x00051766       0x22 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_macro   0x00051788       0xac CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_macro   0x00051834      0x2fa CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
- .debug_macro   0x00051b2e      0x2f0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
+ .debug_macro   0x000002a0      0xb6e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000e0e       0x2e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000e3c       0x6c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000ea8       0x22 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000eca       0x8e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000f58       0x51 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00000fa9      0x103 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000010ac       0x6a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00001116      0x1df CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000012f5       0x2e CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00001323       0x17 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0000133a       0x58 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00001392      0x26d CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000015ff       0x3a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00001639     0x2f0c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00004545      0x130 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00004675      0x344 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000049b9      0x146 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00004aff       0x22 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00004b21    0x3e927 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00043448       0x6c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000434b4      0x1d3 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00043687      0x190 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00043817       0x63 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004387a     0x3486 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00046d00       0x74 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00046d74       0x29 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00046d9d       0x3c CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00046dd9       0x34 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00046e0d      0x364 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047171       0x16 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047187       0x4a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000471d1       0x34 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047205       0x10 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047215       0x58 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004726d      0x1de CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004744b      0x19b CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x000475e6       0x72 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047658      0x47a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00047ad2     0x10fe CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x00048bd0     0x27e2 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004b3b2      0xfd4 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004c386      0x1af CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004c535      0x2c9 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004c7fe      0x2c4 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004cac2      0xa36 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004d4f8      0x7b2 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004dcaa       0xeb CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004dd95      0x216 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004dfab      0x36b CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004e316      0x303 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004e619      0x46a CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004ea83      0x693 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004f116       0xa6 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004f1bc      0x5fb CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+ .debug_macro   0x0004f7b7      0x28e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
+ .debug_macro   0x0004fa45      0x311 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
+ .debug_macro   0x0004fd56      0x28d CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
+ .debug_macro   0x0004ffe3      0x294 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
+ .debug_macro   0x00050277      0x2db CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
+ .debug_macro   0x00050552      0x293 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
+ .debug_macro   0x000507e5      0x2a5 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
+ .debug_macro   0x00050a8a      0x2b8 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
+ .debug_macro   0x00050d42      0x2f4 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x00051036       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x00051052       0xa0 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x000510f2       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x0005110e       0x3c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x0005114a       0x10 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x0005115a       0x1c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x00051176       0x16 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x0005118c      0x170 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x000512fc      0x170 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_macro   0x0005146c      0x2f0 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_macro   0x0005175c       0x16 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_macro   0x00051772       0x22 CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_macro   0x00051794       0xac CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_macro   0x00051840      0x2fa CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
+ .debug_macro   0x00051b3a      0x2f0 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
 
 .debug_line     0x00000000    0x12f28
  .debug_line    0x00000000      0xb66 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
@@ -5320,24 +5320,24 @@ LOAD linker stubs
  .debug_line    0x00012c37      0x17e /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-memset.o)
  .debug_line    0x00012db5      0x173 /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-init.o)
 
-.debug_str      0x00000000   0x209739
- .debug_str     0x00000000   0x209739 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
-                             0x2011f0 (size before relaxing)
- .debug_str     0x00209739   0x2015a3 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
- .debug_str     0x00209739   0x201d08 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
- .debug_str     0x00209739   0x202cfd CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
- .debug_str     0x00209739   0x2007fe CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
- .debug_str     0x00209739   0x201038 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
- .debug_str     0x00209739   0x202acf CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
- .debug_str     0x00209739   0x200772 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
- .debug_str     0x00209739   0x20140e CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
- .debug_str     0x00209739   0x203896 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
- .debug_str     0x00209739   0x20292c CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
- .debug_str     0x00209739   0x201945 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
- .debug_str     0x00209739   0x201892 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
- .debug_str     0x00209739       0xe2 CMakeFiles/local_inference_FSBL.dir/Core/Startup/startup_stm32n657xx_fsbl.s.obj
- .debug_str     0x00209739      0x21c /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-memset.o)
- .debug_str     0x00209739      0x27d /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-init.o)
+.debug_str      0x00000000   0x209748
+ .debug_str     0x00000000   0x209748 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj
+                             0x2011ff (size before relaxing)
+ .debug_str     0x00209748   0x2015b2 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_cortex.c.obj
+ .debug_str     0x00209748   0x201d17 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc.c.obj
+ .debug_str     0x00209748   0x202d0c CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rcc_ex.c.obj
+ .debug_str     0x00209748   0x20080d CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_gpio.c.obj
+ .debug_str     0x00209748   0x201047 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c.obj
+ .debug_str     0x00209748   0x202ade CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c.obj
+ .debug_str     0x00209748   0x200781 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c.obj
+ .debug_str     0x00209748   0x20141d CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_uart.c.obj
+ .debug_str     0x00209748   0x2038a5 CMakeFiles/STM32_Drivers.dir/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.c.obj
+ .debug_str     0x00209748   0x20293b CMakeFiles/local_inference_FSBL.dir/Core/Src/main.c.obj
+ .debug_str     0x00209748   0x201954 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_it.c.obj
+ .debug_str     0x00209748   0x2018a1 CMakeFiles/local_inference_FSBL.dir/Core/Src/stm32n6xx_hal_msp.c.obj
+ .debug_str     0x00209748       0xe2 CMakeFiles/local_inference_FSBL.dir/Core/Startup/startup_stm32n657xx_fsbl.s.obj
+ .debug_str     0x00209748      0x21c /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_str     0x00209748      0x27d /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+dp/hard/libg_nano.a(libc_a-init.o)
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 CMakeFiles/STM32_Drivers.dir/Core/Src/system_stm32n6xx_fsbl.c.obj

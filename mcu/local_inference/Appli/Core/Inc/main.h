@@ -54,7 +54,6 @@ typedef void CMSE_NS_CALL (*funcptr)(void);
 typedef funcptr funcptr_NS;
 
 /* USER CODE BEGIN ET */
-
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

@@ -33,6 +33,12 @@ set(STM32_LINKER_OPTION  )
 set(CMAKE_PROJECT_NAME local_inference_Appli)
 project(${CMAKE_PROJECT_NAME})
 
+# CUSTOM LOGIC
+
+add_subdirectory("../../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
+
+# CUSTOM LOGIC
+
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
 
@@ -67,8 +73,9 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 # Add linked libraries
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
+target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
+    my_app_lib
 )
 
 # Remove wrong libob.a library dependency when using cpp files
@@ -78,6 +85,7 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 if((CMAKE_C_STANDARD EQUAL 90) OR (CMAKE_C_STANDARD EQUAL 99))
     message(ERROR "Generated code requires C11 or higher")
 endif()
+
 
 
 
