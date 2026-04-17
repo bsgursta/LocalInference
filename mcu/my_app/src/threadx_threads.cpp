@@ -10,8 +10,8 @@ extern "C" {
     void my_thread_entry(ULONG thread_input);
 }
 
-TX_THREAD my_thread;
-
+//TX_THREAD my_thread;
+/*
 // These must have C linkage so the kernel can call them
 // Create all functions to call
 extern "C" void my_app_threads(void *first_unused_memory)
@@ -20,12 +20,12 @@ extern "C" void my_app_threads(void *first_unused_memory)
         my_thread_entry, 0x1234, first_unused_memory, 1024,
         3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
 }
-
+*/
 extern "C" void my_thread_entry(ULONG thread_input)
 {
     while(1)
     {   
-        HAL_GPIO_TogglePin(GPIOG,GPIO_PIN_8);
+        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_2);
         tx_thread_sleep(1000);
     }
 }

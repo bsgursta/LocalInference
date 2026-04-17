@@ -1,2 +1,4 @@
 - N6 has no internal flash. uses offboard SRAM
 - I swapped the boot pins to get the debugger to work.
+- For some reason if something is in "free" instead of the appli I can't use it in the code.
+- I had to move alot of the threadx stuff into the HAL code because it wasn't working.

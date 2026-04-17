@@ -72,6 +72,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -163,6 +164,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -239,6 +241,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -290,6 +293,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -372,6 +376,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -467,6 +472,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -538,6 +544,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -611,6 +618,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -682,6 +690,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -755,6 +764,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -827,6 +837,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -898,6 +909,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -1018,6 +1030,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -1089,6 +1102,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -1208,6 +1222,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -1353,6 +1368,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -1497,6 +1513,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -1573,6 +1590,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -1624,6 +1642,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -1706,6 +1725,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin"
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
@@ -1873,6 +1893,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -2017,6 +2038,7 @@ events:
         - "/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-linux-x64/resources/cube-cmake/linux/x86_64"
         - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
+        - "/home/bsgursta/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-linux-x64/resources/binaries/linux/x86_64"
         - "/home/bsgursta/intelFPGA/20.1/modelsim_ase/bin"
         - "/home/bsgursta/aarch64--glibc--stable-2025.08-1/bin"
         - "/home/bsgursta/arm-gnu-toolchain-13.2.Rel1-x86_64-aarch64-none-linux-gnu/bin"
@@ -2043,8 +2065,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK"
-      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK"
+      source: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-RM7in9"
+      binary: "/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-RM7in9"
     cmakeVariables:
       CMAKE_C_FLAGS: "  -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections"
       CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
@@ -2053,10 +2075,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK'
+        Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-RM7in9'
         
-        Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_b544d
-        [1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_c72d0
+        [1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -2064,8 +2086,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 14.3.1 20250623 (GNU Tools for STM32 14.3.rel1.20251027-0700) 
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/'
-         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b544d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccYkErMy.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/'
+         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c72d0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccMXPjPz.s
         GNU C17 (GNU Tools for STM32 14.3.rel1.20251027-0700) version 14.3.1 20250623 (arm-none-eabi)
         	compiled by GNU C version 7.5.0, GMP version 6.2.1, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
         
@@ -2082,13 +2104,13 @@ events:
          /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include
         End of search list.
         Compiler executable checksum: 91583cfdc8b970f823bfd284aa7769b4
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/'
-         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj /tmp/ccYkErMy.s
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/'
+         /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj /tmp/ccMXPjPz.s
         GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 14.3.rel1.20251027-0700) 2.44.0.20250616
         COMPILER_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.'
-        [2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_b544d.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_b544d.a  CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_b544d.a && :
+        COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_c72d0.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_c72d0.a  CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_c72d0.a && :
         
       exitCode: 0
   -
@@ -2121,10 +2143,10 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-ROD9fK']
+        ignore line: [Change Dir: '/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/build/Debug/CMakeFiles/CMakeScratch/TryCompile-RM7in9']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_b544d]
-        ignore line: [[1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/bsgursta/.local/share/stm32cube/bundles/ninja/1.13.2+st.1/bin/ninja -v cmTC_c72d0]
+        ignore line: [[1/2] /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc   -Wall -fdata-sections -ffunction-sections  -Wall -fdata-sections -ffunction-sections    -v -o CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj -c /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -2132,8 +2154,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 14.3.1 20250623 (GNU Tools for STM32 14.3.rel1.20251027-0700) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/']
-        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b544d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccYkErMy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/']
+        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/cc1 -quiet -v -iprefix /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/ -isysroot /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi -D__USES_INITFINI__ /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c72d0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -Wall -version -fdata-sections -ffunction-sections -o /tmp/ccMXPjPz.s]
         ignore line: [GNU C17 (GNU Tools for STM32 14.3.rel1.20251027-0700) version 14.3.1 20250623 (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.2.1  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
         ignore line: []
@@ -2150,13 +2172,13 @@ events:
         ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 91583cfdc8b970f823bfd284aa7769b4]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/']
-        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj /tmp/ccYkErMy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/']
+        ignore line: [ /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj /tmp/ccMXPjPz.s]
         ignore line: [GNU assembler version 2.44.0 (arm-none-eabi) using BFD version (GNU Tools for STM32 14.3.rel1.20251027-0700) 2.44.0.20250616]
         ignore line: [COMPILER_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/:/home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_b544d.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_b544d.a  CMakeFiles/cmTC_b544d.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_b544d.a && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-fdata-sections' '-ffunction-sections' '-v' '-o' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake -E rm -f libcmTC_c72d0.a && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ar qc libcmTC_c72d0.a  CMakeFiles/cmTC_c72d0.dir/CMakeCCompilerABI.c.obj && /home/bsgursta/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-ranlib libcmTC_c72d0.a && :]
         ignore line: []
         ignore line: []
         implicit libs: []

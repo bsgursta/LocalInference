@@ -12,13 +12,17 @@ set(MX_Defines_Syms
 # STM32CubeMX generated include paths
 set(MX_Include_Dirs
     ${CMAKE_CURRENT_SOURCE_DIR}/NetXDuo/App
+    ${CMAKE_CURRENT_SOURCE_DIR}/NetXDuo/Target
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/AZURE_RTOS/App
     ${CMAKE_CURRENT_SOURCE_DIR}/../Secure_nsclib
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/CMSIS/Device/ST/STM32N6xx/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Inc/Legacy
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/BSP/Components/lan8742
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/tsn/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/addons/dhcp
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/drivers/ethernet
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/threadx/common/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/ports/cortex_m55/gnu/inc
@@ -53,12 +57,19 @@ set(STM32_Drivers_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_pwr_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_exti.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_eth.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_eth_ex.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_rif.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Drivers/BSP/Components/lan8742/lan8742.c
 )
 
 # Drivers Midllewares
 
 set(netxduo_Src
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/drivers/ethernet/nx_stm32_eth_driver.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/drivers/ethernet/lan8742/nx_stm32_phy_driver.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/addons/dhcp/nxd_dhcp_client.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/addons/dhcp/nxd_dhcpv6_client.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/tsn/src/nx_shaper.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/src/nx_arp_announce_send.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../Middlewares/ST/netxduo/common/src/nx_arp_dynamic_entries_invalidate.c
