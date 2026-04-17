@@ -1,1 +1,1 @@
-cmd='/home/bsgursta/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake;-DCMAKE_EXPORT_COMPILE_COMMANDS=ON;-DCMAKE_TOOLCHAIN_FILE=/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/gcc-arm-none-eabi.cmake;-DCMAKE_BUILD_TYPE=Debug;-GNinja;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
+cmd='cube-cmake;-DCMAKE_EXPORT_COMPILE_COMMANDS=ON;-DCMAKE_TOOLCHAIN_FILE=/home/bsgursta/Programming_Projects/LocalInference/mcu/local_inference/gcc-arm-none-eabi.cmake;-DCMAKE_BUILD_TYPE=Debug;-GNinja;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'
