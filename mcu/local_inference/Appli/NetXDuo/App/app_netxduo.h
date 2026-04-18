@@ -89,7 +89,11 @@ UINT MX_NetXDuo_Init(VOID *memory_ptr);
 #define NX_APP_DEFAULT_NET_MASK                     0
 
 /* USER CODE BEGIN 1 */
-
+//Example defines
+#define WINDOW_SIZE              512
+#define DEFAULT_PORT             6000
+#define TCP_SERVER_PORT          DEFAULT_PORT
+#define TCP_SERVER_ADDRESS       IP_ADDRESS(192, 168, 1, 1)
 /* USER CODE END 1 */
 
 #ifdef __cplusplus

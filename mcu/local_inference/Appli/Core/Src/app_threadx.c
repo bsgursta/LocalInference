@@ -52,6 +52,7 @@ TX_THREAD my_thread;
 /* USER CODE BEGIN PFP */
 //extern void my_app_threads(void *first_unused_memory);
 extern void my_thread_entry(ULONG thread_input);
+extern void my_thread_tcp(ULONG thread_input);
 /* USER CODE END PFP */
 
 /**
@@ -64,11 +65,11 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
   UINT ret = TX_SUCCESS;
 
   /* USER CODE BEGIN App_ThreadX_MEM_POOL */
- MX_NetXDuo_Init(memory_ptr);
   /* USER CODE END App_ThreadX_MEM_POOL */
 
   /* USER CODE BEGIN App_ThreadX_Init */
-      //tx_thread_create(&my_thread, (char*)"blinky Thread",my_thread_entry, 0x1234, thread_stack, 1024,3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
+  //tx_thread_create(&my_thread, (char*)"blinky Thread",my_thread_entry, 0x1234, thread_stack, 1024,3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
+  tx_thread_create(&my_thread, (char*)"tcp Thread",my_thread_tcp, 0x1234, thread_stack, 1024,3, 3, TX_NO_TIME_SLICE, TX_AUTO_START);
   /* USER CODE END App_ThreadX_Init */
 
   return ret;
