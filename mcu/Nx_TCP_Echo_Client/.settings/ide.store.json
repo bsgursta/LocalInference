@@ -1,0 +1,11 @@
+{
+  "source": {
+    "sourceType": "Example_stm32cubeide",
+    "sourceId": "Nx_TCP_Echo_Client"
+  },
+  "device": "STM32N657X0H3Q",
+  "core": "Cortex-M55",
+  "order": 0,
+  "toolchain": "GCC",
+  "board": "NUCLEO-N657X0-Q"
+}

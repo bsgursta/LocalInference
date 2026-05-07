@@ -1,0 +1,57 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "toolchainFile": "cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMSIS_Dvendor": "STMicroelectronics:13",
+                "CMSIS_Dname": "STM32N657X0H3Q",
+                "CMSIS_Dcore": "Cortex-M55",
+                "CMSIS_Dtz": "TZ",
+                "CMSIS_Dfpu": "DP_FPU",
+                "CMSIS_Ddsp": "DSP",
+                "CMSIS_Dmve": "FP_MVE",
+                "CMSIS_Dmpu": "MPU",
+                "CMSIS_Dendian": "Little-endian",
+                "CMSIS_Dsecure": "",
+                "CMSIS_Tcompiler": "GCC"
+            }
+        },
+        {
+            "name": "Debug",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CUBE_CMAKE_C_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-std=gnu11;-g3;-DDEBUG;-DNX_INCLUDE_USER_DEFINE_FILE;-DSTM32N657xx;-DTX_INCLUDE_USER_DEFINE_FILE;-O0;-ffunction-sections;-fdata-sections;-Wall;-fstack-usage;-fcyclomatic-complexity;-mcmse",
+                "CUBE_CMAKE_CXX_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-std=gnu++14;-g3;-O0;-ffunction-sections;-fdata-sections;-fno-exceptions;-fno-rtti;-fno-use-cxa-atexit;-Wall;-fstack-usage;-fcyclomatic-complexity",
+                "CUBE_CMAKE_ASM_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-g3;-DDEBUG;-DRTL8211_INIT_TO=10000;-DTX_SINGLE_MODE_SECURE=1;-x;assembler-with-cpp",
+                "CUBE_CMAKE_EXE_LINKER_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-TSTM32N657X0HXQ_AXISRAM2_fsbl.ld;--specs=nosys.specs;-Wl,-Map=Nx_TCP_Echo_Client.map;-Wl,--gc-sections;-static;-Wl,--cmse-implib;-Wl,--out-implib=./Nx_TCP_Echo_Client_import_lib.o"
+            }
+        },
+        {
+            "name": "Release",
+            "inherits": "default",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CUBE_CMAKE_C_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-std=gnu11;-DNX_INCLUDE_USER_DEFINE_FILE;-DSTM32N657xx;-DTX_INCLUDE_USER_DEFINE_FILE;-Os;-ffunction-sections;-fdata-sections;-Wall;-fstack-usage;-fcyclomatic-complexity;-mcmse",
+                "CUBE_CMAKE_CXX_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-std=gnu++14;-Os;-ffunction-sections;-fdata-sections;-fno-exceptions;-fno-rtti;-fno-use-cxa-atexit;-Wall;-fstack-usage;-fcyclomatic-complexity",
+                "CUBE_CMAKE_ASM_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-DTX_SINGLE_MODE_SECURE=1;-x;assembler-with-cpp",
+                "CUBE_CMAKE_EXE_LINKER_FLAGS": "-mfpu=fpv5-d16;-mfloat-abi=hard;-mthumb;--specs=nano.specs;-mcpu=cortex-m55;-TSTM32N657X0HXQ_AXISRAM2_fsbl.ld;--specs=nosys.specs;-Wl,-Map=Nx_TCP_Echo_Client.map;-Wl,--gc-sections;-static;-Wl,--cmse-implib;-Wl,--out-implib=./Nx_TCP_Echo_Client_import_lib.o"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "configurePreset": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release"
+        }
+    ]
+}
