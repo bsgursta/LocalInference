@@ -8,9 +8,15 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 project(Nx_TCP_Echo_Client)
 
 # Enable CMake support for ASM and C/CPP languages
-enable_language(C ASM)
+enable_language(C CXX ASM)
 
 set(BUILD_UNIT_0_NAME Nx_TCP_Echo_Client)
+
+# CUSTOM LOGIC
+
+add_subdirectory("../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
+
+# CUSTOM LOGIC
 
 # Create an executable object type
 add_executable(${BUILD_UNIT_0_NAME})
@@ -36,4 +42,14 @@ target_sources(${BUILD_UNIT_0_NAME} PRIVATE
 # Add include directories
 target_include_directories(${BUILD_UNIT_0_NAME} PRIVATE
   # User defined include directories
+  Drivers/STM32N6xx_HAL_Driver/Inc
 )
+
+# CUSTOM LOGIC
+
+target_link_libraries(${CMAKE_PROJECT_NAME}
+    # Add user defined libraries
+    my_app_lib
+)
+
+# CUSTOM LOGIC

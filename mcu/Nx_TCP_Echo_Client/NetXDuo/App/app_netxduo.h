@@ -89,9 +89,9 @@ UINT MX_NetXDuo_Init(VOID *memory_ptr);
 
 #define NULL_ADDRESS             0
 
-#define DEFAULT_PORT             6000
+#define DEFAULT_PORT             44362
 #define TCP_SERVER_PORT          DEFAULT_PORT
-#define TCP_SERVER_ADDRESS       IP_ADDRESS(192, 168, 0, 1)
+#define TCP_SERVER_ADDRESS       IP_ADDRESS(192, 144, 20, 16)
 
 #define MAX_PACKET_COUNT         100
 #define DEFAULT_MESSAGE          "TCP Client on NUCLEO-N657X0-Q"
