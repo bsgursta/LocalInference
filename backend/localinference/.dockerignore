@@ -1,0 +1,9 @@
+.vscode
+
+compose.yaml
+Dockerfile
+
+.git*
+*.md
+
+.env
