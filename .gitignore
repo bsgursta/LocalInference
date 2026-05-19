@@ -69,5 +69,3 @@ temp/
 
 
 !frontend/public/sasazuka.png
-# ignore changes to compose.yaml until its needed
-compose.yaml
