@@ -1,5 +1,4 @@
 *.pyc
-.env
 __pycache__
 
 settings.json
@@ -9,10 +8,7 @@ settings.json
 node_modules/
 
 
-# environment files
-.env
-.env.*
-!.env.example
+
 
 /.react-router/
 /build/
@@ -69,5 +65,10 @@ temp/
 
 
 !frontend/public/sasazuka.png
-compose.yaml
 *.class
+
+
+# environment files
+# .env
+# .env.*
+# !.env.example

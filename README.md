@@ -17,20 +17,41 @@ VITE_API_BASE_URL=http://127.0.0.1:8000
 ## NOTE:
 Must have docker installed first.
 
-Then have to individually execute `docker compose up li-pgsql-db` to run the database first then `docker compose up li-server-py` to initialize database with placeholder data, and `docker compose up li-frontend-tsx` whenever.
+# Building production Docker image 
+in .env, set:
+`PROFILE=prod`
+then run:
+`docker compose -f compose.yaml -f compose.prod.yaml up -d`
 
-When you are done with the docker containers, you can run `docker compose down` to turn the containers off.
-
-After doing the above, the next time you run the setup, you can just quickly run `docker compose up` and all should be well.
-
+# Running dev container
+<!-- TODO! -->
+Ensure that in `.env` PROFILE=`dev` then run
+`docker compose up` 
+    `-d` (if you want to run detached)
 
 ### Socket demo
 Implements an API to connect to MCU, opens socket for communication and provides a sample client file (requires manual execution of client).
 
-The backend will automatically spin up a 24/7 socket, accepting only 1 MCU device during the current server's lifetime. (restarting server will enable a new connection, working on a more robust solution)
+The backend will automatically spin up a 24/7 socket, accepting limited number of MCU devices during the server's lifetime. (restarting server will enable a new connection, working on a more robust solution)
 
-A simple API to test future implementation of sending custom data to a client (MCU)
 
-`backend/src/sample_socket`
+# Todo
 
-a simple socket demo (as simple as it gets) though it is a one-way from client->server rather than other way around. Client sends a custom text message and server replies back w/ `heard {msg}`
+Manually register MCU 
+    -> user registers MAC address (UUID) [as whitelist]
+
+MCU makes a connection to server (socket con, 24/7 no-drop/timeout)
+    -> on first registration, MCU stores provided `SECRET_KEY` used to reconnect if something were to change
+        -> on reregistration, use stored `SECRET_KEY` to get a new key and rewhitelist self
+
+    -> connect using baked MAC address on first connection 
+        On any connection, server returns either:
+            1 == OK, followed by extra stream of data afterwards `\n`
+            OR
+            0 == CONNECTION PREVENTED (nothing else)
+
+            
+
+
+MCU awaits for instructions from server
+    -> while loop to parse instructions
