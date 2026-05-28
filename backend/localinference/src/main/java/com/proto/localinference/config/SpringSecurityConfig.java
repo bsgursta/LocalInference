@@ -34,13 +34,13 @@ public class SpringSecurityConfig {
             auth ->
                 auth.requestMatchers("/", "/auth/**") /* prod - required */
                     .permitAll()
-                    .requestMatchers(
-                        "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**") /* testing api */
-                    .permitAll()
-                    // .requestMatchers("/mcu/**") /* testing only */
+                    // .requestMatchers(
+                    // "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**") /* testing api */
                     // .permitAll()
-                    .requestMatchers("/index.html", "/app.js") /* testing frontend */
+                    .requestMatchers("/mcu/**") /* testing only */
                     .permitAll()
+                    // .requestMatchers("/index.html", "/app.js") /* testing frontend */
+                    // .permitAll()
                     .anyRequest() /* enable once auth is set */
                     .authenticated())
         .sessionManagement(

@@ -49,13 +49,13 @@ public class McuController {
    *
    * @return {UUID, UUID}
    */
-  @PostMapping("")
-  public ResponseEntity<UUID> createNewMcu() {
-    var res = service.manuallyAddMcu();
-    return res.isEmpty()
-        ? ResponseEntity.badRequest().build()
-        : ResponseEntity.ok(res.get().uuid());
-  }
+  // @PostMapping("")
+  // public ResponseEntity<UUID> createNewMcu() {
+  //   var res = service.manuallyAddMcu();
+  //   return res.isEmpty()
+  //       ? ResponseEntity.badRequest().build()
+  //       : ResponseEntity.ok(res.get().uuid());
+  // }
 
   @PostMapping("/{macAddress}/ping")
   public ResponseEntity<Void> pingMcu(@PathVariable UUID macAddress) {
