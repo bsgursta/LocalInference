@@ -1,7 +1,10 @@
 package com.proto.localinference.services;
 
-import com.proto.localinference.model.ClientDetailsRecord;
+import com.proto.localinference.dto.ClientDetailsRecord;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,32 +13,72 @@ import org.springframework.stereotype.Service;
 @Service
 public class McuService {
 
-  private Map<UUID, String> allowedClientsMap =
+  private Map<UUID, UUID> allowedClientsMap =
       new ConcurrentHashMap<>(); /* stores UUID, and public hash key to verify identity */
 
-  public Map<UUID, String> getAllowedClientsMap() {
+  private Map<UUID, ArrayList<UUID>> subscriberMap =
+      new ConcurrentHashMap<>(); /* stores clients mapped to an MCU */
+
+  public Map<UUID, UUID> getAllowedClientsMap() {
     return allowedClientsMap;
   }
 
-  public Optional<ClientDetailsRecord> registerMcu(int secureCode) {
+  public Optional<ClientDetailsRecord> reregisterMcu(UUID macAddress, UUID backupKey) {
     /* Ensure valid device registration */
-    if (secureCode != 111) return Optional.empty();
+    UUID storedBackupKey = allowedClientsMap.get(macAddress);
+    if (Objects.equals(storedBackupKey, backupKey)) return Optional.empty();
 
-    /* Generate unique id (and hash) stored on MCU, used for secure handshakes */
-    UUID uuid = UUID.randomUUID();
-    String publicKey = generateHash();
+    UUID newPublicKey = UUID.randomUUID();
 
-    allowedClientsMap.put(uuid, publicKey);
-    return Optional.of(new ClientDetailsRecord(uuid, publicKey));
+    allowedClientsMap.put(macAddress, newPublicKey);
+    return Optional.of(new ClientDetailsRecord(macAddress, newPublicKey));
   }
 
-  public String generateHash() {
-    return "A very secure hash";
+  /* For authorized users */
+  public Optional<ClientDetailsRecord> manuallyAddMcu() {
+    UUID macAddress = UUID.randomUUID();
+    if (!getClient(macAddress).isEmpty()) return Optional.empty();
+
+    UUID publicKey = UUID.randomUUID();
+    allowedClientsMap.put(macAddress, publicKey);
+
+    return Optional.of(new ClientDetailsRecord(macAddress, publicKey));
+  }
+
+  // TODO: add pgsql here
+  public Optional<ClientDetailsRecord> manuallyRegisterMcu(UUID macAddress) {
+    /* Check if macAddress already exists in db. */
+    /* If conflict, error. Requires admin intervention or reregister MCU using backup key */
+    if (!getClient(macAddress).isEmpty()) return Optional.empty();
+
+    /* Add macAddress to db */
+    UUID publicKey = UUID.randomUUID();
+    allowedClientsMap.put(macAddress, publicKey);
+
+    return Optional.of(new ClientDetailsRecord(macAddress, publicKey));
+  }
+
+  public List<UUID> generateIncidentResponseClients(UUID macAddress) {
+    /* TODO: implement client notification of incident */
+
+    /* For each user in subscriberMap that is subscribed to macAddress, send incidentDetails */
+
+    return subscriberMap.get(macAddress);
+  }
+
+  public void updateUsedModel(Byte[] model) {
+    /* takes in the model weights and uploads to MCU */
+
+    /* or maybe processes model weights and returns it organized neatly to MCU */
   }
 
   public Optional<ClientDetailsRecord> getClient(UUID uuid) {
     ClientDetailsRecord record = new ClientDetailsRecord(uuid, allowedClientsMap.get(uuid));
 
-    return record.publicHashKeyString() == null ? Optional.empty() : Optional.of(record);
+    return record.reregisterKey() == null ? Optional.empty() : Optional.of(record);
+  }
+
+  public boolean clientExists(UUID clientId) {
+    return !getClient(clientId).isEmpty();
   }
 }
