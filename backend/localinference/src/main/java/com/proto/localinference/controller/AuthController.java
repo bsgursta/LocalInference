@@ -48,12 +48,13 @@ public class AuthController {
     this.jwtDecoder = jwtDecoder;
   }
 
-  @PostMapping("/register")
-  public ResponseEntity<String> createUser(@RequestBody AuthRecord request) throws Exception {
-    var res = authService.createUser(request);
+  // @Deprecated
+  // @PostMapping("/register")
+  // public ResponseEntity<String> createUser(@RequestBody AuthRecord request) throws Exception {
+  //   var res = authService.createUser(request);
 
-    return ResponseEntity.ok(res.getUsername());
-  }
+  //   return ResponseEntity.ok(res.getUsername());
+  // }
 
   @PostMapping("/login")
   public ResponseEntity<String> login(
@@ -75,7 +76,8 @@ public class AuthController {
   }
 
   /**
-   * Used by the frontend to collect a new accessToken to use for auth
+   * Used by the frontend to collect a new accessToken to use for auth. Might use the
+   * SecurityFilterChain to renew access tokens manually
    *
    * @param request
    * @param response
