@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.util.Scanner;
 
 public class SocketClient {
@@ -18,41 +14,36 @@ public class SocketClient {
       BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 
       /* create device UUID */
-      HttpClient client = HttpClient.newHttpClient();
-      HttpRequest request =
-          HttpRequest.newBuilder()
-              .uri(URI.create("http://127.0.0.1:8080/mcu"))
-              .POST(HttpRequest.BodyPublishers.ofString(""))
-              .build();
+      // HttpClient client = HttpClient.newHttpClient();
+      // HttpRequest request =
+      //     HttpRequest.newBuilder()
+      //         .uri(URI.create("http://127.0.0.1:8080/mcu"))
+      //         .POST(HttpRequest.BodyPublishers.ofString(""))
+      //         .build();
 
-      HttpResponse<String> id = client.send(request, HttpResponse.BodyHandlers.ofString());
-      String uuid = id.body().replace("\"", "");
+      // HttpResponse<String> id = client.send(request, HttpResponse.BodyHandlers.ofString());
+      String uuid = "dd1d2e0c-504e-445c-8e0e-136e392ef4f3";
       System.out.println(uuid);
 
       /* send message over socket, identifying self by uuid */
-      String msg = "PING\nLmao just testing";
-      writer.write(uuid.toString());
-      writer.newLine();
-      writer.write(msg);
-      writer.newLine();
+      String msg = "REGISTER";
+
+      writer.write(uuid.toString() + '\n');
+      writer.write(msg + '\n');
       writer.flush();
+
+      for (int i = 1; i < 100; i++) {
+        writer.write(uuid.toString());
+        writer.newLine();
+        writer.write("NOTIFY");
+        writer.newLine();
+        writer.write("Line " + (char) ((i % 10) + 'a'));
+        writer.newLine();
+        writer.flush();
+      }
 
       /* read server response */
       BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-      // String statusLine = reader.readLine(); // "1" or "0"
-      // String messageLine = reader.readLine(); // "OK received..."
-
-      // if (statusLine != null) {
-      //   boolean ok = statusLine.charAt(0) == '1';
-      //   System.out.println("Server response: " + (ok ? "OK" : "NOT ALLOWED"));
-      //   System.out.println("Server message: " + messageLine);
-      // } else {
-      //   System.out.println("No response from server");
-      // }
-
-      // while (!socket.isClosed()) {
-      //   System.out.println(reader.readLine());
-      // }
 
       Thread listener =
           new Thread(
