@@ -73,9 +73,14 @@ public class McuService {
   }
 
   public Optional<ClientDetailsRecord> getClient(UUID uuid) {
-    ClientDetailsRecord record = new ClientDetailsRecord(uuid, allowedClientsMap.get(uuid));
 
-    return record.reregisterKey() == null ? Optional.empty() : Optional.of(record);
+    var client = allowedClientsMap.get(uuid);
+
+    if (client == null) {
+      return Optional.empty();
+    }
+
+    return Optional.of(new ClientDetailsRecord(uuid, client));
   }
 
   public boolean clientExists(UUID clientId) {

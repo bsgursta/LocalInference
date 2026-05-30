@@ -1,6 +1,8 @@
 package com.proto.localinference.socket;
 
 import com.proto.localinference.dto.McuInstructions;
+import com.proto.localinference.exceptions.InvalidSocketConnectionException;
+import com.proto.localinference.services.McuService;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -17,26 +19,38 @@ public class SocketService {
   private static final int MAX_PAYLOAD_CT = 512; // 512 x 512 bytes
   private static final int INSTRUCTION_MAX_LEN = 64; // 64 chars
 
-  public Optional<UUID> validateMcuConnectionAndReturnClientId(BufferedReader reader)
-      throws IOException {
+  private McuService service;
+
+  public SocketService(McuService service) {
+    this.service = service;
+  }
+
+  public UUID validateMcuConnectionAndReturnClientIdOrRejectCon(
+      BufferedReader reader, BufferedWriter writer)
+      throws IOException, InvalidSocketConnectionException {
     char[] idBuf = new char[UUID_LENGTH];
     int read = reader.read(idBuf, 0, UUID_LENGTH);
-    int delimiter = reader.read();
 
-    if (read != UUID_LENGTH) return Optional.empty();
+    // \r\n will not be considered a valid terminators. windows sucks
+    if (reader.read() != '\n')
+      throw new InvalidSocketConnectionException("Missing new line char after UUID");
 
-    // accept \n or \r\n as valid terminators
-    if (delimiter != '\n') if (delimiter != '\r' || reader.read() != '\n') return Optional.empty();
+    UUID clientId;
+    if (read == UUID_LENGTH) clientId = parseUUID(new String(idBuf));
+    else throw new InvalidSocketConnectionException("Invalid UUID provided");
 
-    Optional<UUID> clientId = read == UUID_LENGTH ? parseUUID(new String(idBuf)) : Optional.empty();
+    if (clientId == null || service.getClient(clientId).isEmpty()) {
+      reject(writer);
+    }
+
     return clientId;
   }
 
-  private Optional<UUID> parseUUID(String s) {
+  private UUID parseUUID(String s) throws InvalidSocketConnectionException {
     try {
-      return Optional.of(UUID.fromString(s));
+      return UUID.fromString(s);
     } catch (IllegalArgumentException e) {
-      return Optional.empty();
+      throw new InvalidSocketConnectionException("Invalid UUID provided");
     }
   }
 
@@ -73,5 +87,13 @@ public class SocketService {
     }
 
     return Optional.of(new McuInstructions(instruction, sb.toString()));
+  }
+
+  public void reject(BufferedWriter writer) throws IOException, InvalidSocketConnectionException {
+    writer.write("1");
+    writer.newLine();
+    writer.flush();
+    writer.close();
+    throw new InvalidSocketConnectionException("Server refused to continue connection");
   }
 }

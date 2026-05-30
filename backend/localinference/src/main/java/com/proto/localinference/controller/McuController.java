@@ -4,7 +4,6 @@ import com.proto.localinference.dto.ClientDetailsRecord;
 import com.proto.localinference.services.McuService;
 import com.proto.localinference.socket.McuSocket;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import jakarta.validation.constraints.NotBlank;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -38,8 +37,7 @@ public class McuController {
   }
 
   @PostMapping("/register")
-  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(
-      @RequestBody @NotBlank UUID macAddress) {
+  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(@RequestBody UUID macAddress) {
     var res = service.manuallyRegisterMcu(macAddress);
     return res.isEmpty() ? ResponseEntity.badRequest().build() : ResponseEntity.ok(res.get());
   }

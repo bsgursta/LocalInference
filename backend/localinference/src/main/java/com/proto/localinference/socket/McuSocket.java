@@ -1,6 +1,7 @@
 package com.proto.localinference.socket;
 
 import com.proto.localinference.dto.McuInstructions;
+import com.proto.localinference.exceptions.InvalidSocketConnectionException;
 import com.proto.localinference.services.McuService;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
@@ -11,7 +12,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Optional;
+import java.net.SocketException;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
@@ -95,90 +96,122 @@ public class McuSocket {
     }
   }
 
+  /**
+   * This is a new socket connection that is made. Incoming con must ALWAYS pass the following
+   * param: <br>
+   * {@code {UUID}}\n{@code REGISTER_CON}\n <br>
+   * From then on, MCU may make any kind of request as long as it follows the pattern of:<br>
+   * {@code {UUID}}\n{@link McuOptions @McuOptions}\n{@code {PAYLOAD}}\n
+   *
+   * @param con
+   */
   private void handleClient(Socket con) {
-    Optional<UUID> clientId = null;
+    UUID clientId = null;
     try {
-      con.setSoTimeout(SO_TIMEOUT_MS); // 5 second read timeout
+      con.setSoTimeout(SO_TIMEOUT_MS); // 5 second to verify identity else close con
+      System.out.println("inc con from " + con.getInetAddress().getHostAddress());
+
       BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
       BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(con.getOutputStream()));
 
       /* validate UUID as key code */
-      clientId = socketService.validateMcuConnectionAndReturnClientId(reader);
-
-      if (clientId.isEmpty() || service.getClient(clientId.get()).isEmpty()) {
-        reject(writer);
-        return;
-      }
-
-      System.out.println("Incoming id: " + clientId.get().toString());
-
-      /* parse instructions */
-      handlePayloadFromMcu(clientId.get(), reader, writer);
+      clientId = socketService.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
+      /* read register McuOptions enum */
+      McuInstructions instructions = readInstructions(reader, writer);
+      if (instructions.instruction() != McuOptions.REGISTER
+          && instructions.instruction() != McuOptions.REREGISTER) socketService.reject(writer);
 
       con.setSoTimeout(0);
-      connections.put(clientId.get(), writer);
+      connections.put(clientId, writer);
 
-      /* handle instruction details */
+      /* handle other instructions */
 
       while (!con.isClosed()) {
-        clientId = socketService.validateMcuConnectionAndReturnClientId(reader);
+        clientId = socketService.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
+        instructions = readInstructions(reader, writer);
 
-        if (clientId.isEmpty() || service.getClient(clientId.get()).isEmpty()) {
-          reject(writer);
-          return;
-        }
+        System.out.println(
+            "Client "
+                + clientId.toString()
+                + " requested "
+                + instructions.instruction().toString()
+                + (instructions.details() == null ? "" : " with args: " + instructions.details()));
 
-        System.out.println("Incoming id: " + clientId);
+        acknowledge(writer);
 
-        /* parse instructions */
-        handlePayloadFromMcu(clientId.get(), reader, writer);
+        // /* parse instructions */
+        // handlePayloadFromMcu(clientId, reader, writer);
       }
-      System.out.println("Closed con");
+      System.out.println("finished loop");
 
+    } catch (SocketException e) {
+      System.out.println("Socket timed out or failed to access socket");
     } catch (IOException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage() + " IO");
+    } catch (InvalidSocketConnectionException e) {
+      System.out.println(e.getMessage() + " socket");
+    } catch (IllegalArgumentException e) {
+      System.out.println("Invalid formatting");
     } finally {
-      if (clientId != null) connections.remove(clientId.get());
+      connections.remove(clientId);
+      System.out.println("Closed con");
     }
   }
 
-  private Optional<McuInstructions> handlePayloadFromMcu(
-      UUID clientId, BufferedReader reader, BufferedWriter writer) throws IOException {
+  /**
+   * After verifying identity of client, read the next line which should contain a {@link }
+   *
+   * @param reader
+   * @param writer
+   * @return
+   * @throws IOException
+   * @throws IllegalArgumentException
+   */
+  private McuInstructions readInstructions(BufferedReader reader, BufferedWriter writer)
+      throws IOException, IllegalArgumentException, InvalidSocketConnectionException {
 
-    /* TODO: Finish reading details, currently accepts only 512 bytes*/
-    var optMsg = socketService.parseInstructionCodeAndDetails(clientId, reader, writer);
+    StringBuilder sBuilder = new StringBuilder();
+    sBuilder.append(reader.readLine());
+    String opt = sBuilder.toString();
+    if ("null".equals(opt)) throw new InvalidSocketConnectionException("No McuOptions provided");
 
-    /* then process payload */
-    if (optMsg.isEmpty()) {
-      reject(writer);
-      return Optional.empty();
-    }
+    McuOptions option = McuOptions.valueOf(opt);
+    System.out.println("provided opt: " + opt);
 
-    System.out.println(
-        "Instruction {"
-            + optMsg.get().instruction().toString()
-            + "} and payload from "
-            + clientId.toString()
-            + ": "
-            + optMsg.get().details());
+    /* read McuOptions and see if need to read more of the payload */
+    if (!doesRequirePayloadProcessing(option)) return new McuInstructions(option, "");
 
-    acknowledge(writer);
-    writer.write("OK received " + optMsg.get().details().length() + " bytes");
-    writer.newLine();
-    writer.flush();
+    // sBuilder.setLength(0); /* does jvm collect this? */
 
-    return optMsg;
+    /* */
+    String payload = reader.readLine();
+    if (payload == null || "".equals(payload))
+      throw new InvalidSocketConnectionException("Required payload not provided");
+    return new McuInstructions(option, payload);
   }
 
-  private void reject(BufferedWriter writer) throws IOException {
-    writer.write("0");
-    writer.newLine();
-    writer.flush();
-    writer.close();
+  private boolean doesRequirePayloadProcessing(McuOptions options)
+      throws InvalidSocketConnectionException {
+    switch (options) {
+      case McuOptions.NOTIFY:
+        return true;
+      case McuOptions.REGISTER:
+        return false;
+      case McuOptions.REREGISTER:
+        return true;
+      case McuOptions.PING:
+        return false;
+      case McuOptions.UPDATE:
+        return true;
+      case McuOptions.NIL:
+        return false;
+      default:
+        throw new InvalidSocketConnectionException("Invalid option provided");
+    }
   }
 
   private void acknowledge(BufferedWriter writer) throws IOException {
-    writer.write("1");
+    writer.write("0");
     writer.newLine();
     writer.flush();
   }

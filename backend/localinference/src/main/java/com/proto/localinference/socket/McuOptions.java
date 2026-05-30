@@ -9,10 +9,10 @@ public enum McuOptions {
 
   /* MCU -> Server: MCU opens a socket connection with server for the first time
   NOTE: REQUIRES MCU UUID TO ALREADY BE REGISTERED AHEAD OF TIME                    */
-  REGISTER_CON,
+  REGISTER,
 
   /* MCU => Server: MCU reopens a new socket connection due to previously closed connection */
-  REREGISTER_CON,
+  REREGISTER,
 
   /* MCU <--->  Server: Checks for valid socket-is-alive connection */
   PING,
