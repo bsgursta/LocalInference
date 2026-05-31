@@ -90,8 +90,7 @@ public class SocketService {
   }
 
   public void reject(BufferedWriter writer) throws IOException, InvalidSocketConnectionException {
-    writer.write("1");
-    writer.newLine();
+    writer.write(1);
     writer.flush();
     writer.close();
     throw new InvalidSocketConnectionException("Server refused to continue connection");

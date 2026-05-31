@@ -212,7 +212,7 @@ public class McuSocket {
   }
 
   private void acknowledge(BufferedWriter writer) throws IOException {
-    writer.write("0");
+    writer.write(0);
     writer.newLine();
     writer.flush();
   }
@@ -224,7 +224,6 @@ public class McuSocket {
 
     try {
       writer.write(message);
-      writer.newLine();
       writer.flush();
       return true;
     } catch (IOException e) {
