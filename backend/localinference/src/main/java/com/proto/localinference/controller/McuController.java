@@ -1,6 +1,7 @@
 package com.proto.localinference.controller;
 
 import com.proto.localinference.dto.ClientDetailsRecord;
+import com.proto.localinference.dto.RegisterMcu;
 import com.proto.localinference.services.McuService;
 import com.proto.localinference.socket.McuSocket;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
@@ -37,8 +38,8 @@ public class McuController {
   }
 
   @PostMapping("/register")
-  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(@RequestBody UUID macAddress) {
-    var res = service.manuallyRegisterMcu(macAddress);
+  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(@RequestBody RegisterMcu mcu) {
+    var res = service.manuallyRegisterMcu(mcu.uuid());
     return res.isEmpty() ? ResponseEntity.badRequest().build() : ResponseEntity.ok(res.get());
   }
 
