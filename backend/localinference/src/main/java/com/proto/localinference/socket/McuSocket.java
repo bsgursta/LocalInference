@@ -123,6 +123,7 @@ public class McuSocket {
 
       con.setSoTimeout(0);
       connections.put(clientId, writer);
+      acknowledge(writer);
 
       /* handle other instructions */
 
