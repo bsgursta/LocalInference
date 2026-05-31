@@ -1,8 +1,7 @@
 package com.proto.localinference.socket;
 
-import com.proto.localinference.dto.McuInstructions;
+import com.proto.localinference.dto.McuArg;
 import com.proto.localinference.exceptions.InvalidSocketConnectionException;
-import com.proto.localinference.services.McuService;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import java.io.BufferedReader;
@@ -36,14 +35,12 @@ public class McuSocket {
   server = factory.createServerSocket(PORT);
   */
 
-  private static final int CHUNK_SIZE = 512; // max chars per payload read
   private static final int SO_TIMEOUT_MS = 5000; // drop connection if silent for 5s
 
   private final ConcurrentHashMap<UUID, BufferedWriter> connections = new ConcurrentHashMap<>();
 
   private ServerSocket server;
-  private SocketService socketService;
-  private McuService service;
+  private SocketService service;
 
   private ExecutorService acceptor = Executors.newSingleThreadExecutor();
   private ExecutorService handlers =
@@ -56,9 +53,8 @@ public class McuSocket {
           new ThreadPoolExecutor.AbortPolicy() // reject beyond that
           );
 
-  public McuSocket(SocketService socketService, McuService service) {
-    this.socketService = socketService;
-    this.service = service;
+  public McuSocket(SocketService socketService) {
+    this.service = socketService;
   }
 
   @PostConstruct
@@ -96,12 +92,16 @@ public class McuSocket {
     }
   }
 
+  public boolean isConnected(UUID clientId) {
+    return !connections.containsKey(clientId) ? false : send(clientId, "PING");
+  }
+
   /**
    * This is a new socket connection that is made. Incoming con must ALWAYS pass the following
    * param: <br>
-   * {@code {UUID}}\n{@code REGISTER_CON}\n <br>
+   * {@code UUID}:{@code REGISTER_CON}\n <br>
    * From then on, MCU may make any kind of request as long as it follows the pattern of:<br>
-   * {@code {UUID}}\n{@link McuOptions @McuOptions}\n{@code {PAYLOAD}}\n
+   * {@code {UUID}}\n{@link McuOption @McuOptions}\n{@code {PAYLOAD}}\n
    *
    * @param con
    */
@@ -109,112 +109,53 @@ public class McuSocket {
     UUID clientId = null;
     try {
       con.setSoTimeout(SO_TIMEOUT_MS); // 5 second to verify identity else close con
-      System.out.println("inc con from " + con.getInetAddress().getHostAddress());
+      System.out.println("inc con from " + con.getRemoteSocketAddress().toString());
 
       BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
       BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(con.getOutputStream()));
 
-      /* validate UUID as key code */
-      clientId = socketService.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
-      /* read register McuOptions enum */
-      McuInstructions instructions = readInstructions(reader, writer);
-      if (instructions.instruction() != McuOptions.REGISTER
-          && instructions.instruction() != McuOptions.REREGISTER) socketService.reject(writer);
+      /* read line 1 for uuid, then read line 2 & 3 for args and context */
+      clientId = service.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
+      McuArg arg = service.readInstructionsAndPayloadIfAny(reader, writer);
+
+      if (arg.instruction() != McuOption.REGISTER && arg.instruction() != McuOption.REREGISTER) {
+        service.reject(writer);
+        throw new InvalidSocketConnectionException(
+            InvalidSocketConnectionException.SocketErrorOption.ImproperSequenceOfEvents);
+      }
 
       con.setSoTimeout(0);
       connections.put(clientId, writer);
-      acknowledge(writer);
+      service.acknowledge(writer);
 
       /* handle other instructions */
-
       while (!con.isClosed()) {
-        clientId = socketService.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
-        instructions = readInstructions(reader, writer);
+        clientId = service.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
+        arg = service.readInstructionsAndPayloadIfAny(reader, writer);
 
         System.out.println(
             "Client "
                 + clientId.toString()
                 + " requested "
-                + instructions.instruction().toString()
-                + (instructions.details() == null ? "" : " with args: " + instructions.details()));
+                + arg.instruction().toString()
+                + (arg.details() == null ? "" : " with args: " + arg.details()));
 
-        acknowledge(writer);
-
-        // /* parse instructions */
-        // handlePayloadFromMcu(clientId, reader, writer);
+        service.acknowledge(writer);
       }
       System.out.println("finished loop");
 
-    } catch (SocketException e) {
-      System.out.println("Socket timed out or failed to access socket");
-    } catch (IOException e) {
-      System.out.println(e.getMessage() + " IO");
     } catch (InvalidSocketConnectionException e) {
-      System.out.println(e.getMessage() + " socket");
+      System.out.println(e.getMessage());
     } catch (IllegalArgumentException e) {
-      System.out.println("Invalid formatting");
+      System.out.println(e.getMessage());
+    } catch (SocketException e) {
+      System.out.println(e.getMessage());
+    } catch (IOException e) {
+      System.out.println(e.getMessage());
     } finally {
       connections.remove(clientId);
-      System.out.println("Closed con");
+      System.out.println("Con was closed");
     }
-  }
-
-  /**
-   * After verifying identity of client, read the next line which should contain a {@link }
-   *
-   * @param reader
-   * @param writer
-   * @return
-   * @throws IOException
-   * @throws IllegalArgumentException
-   */
-  private McuInstructions readInstructions(BufferedReader reader, BufferedWriter writer)
-      throws IOException, IllegalArgumentException, InvalidSocketConnectionException {
-
-    StringBuilder sBuilder = new StringBuilder();
-    sBuilder.append(reader.readLine());
-    String opt = sBuilder.toString();
-    if ("null".equals(opt)) throw new InvalidSocketConnectionException("No McuOptions provided");
-
-    McuOptions option = McuOptions.valueOf(opt);
-    System.out.println("provided opt: " + opt);
-
-    /* read McuOptions and see if need to read more of the payload */
-    if (!doesRequirePayloadProcessing(option)) return new McuInstructions(option, "");
-
-    // sBuilder.setLength(0); /* does jvm collect this? */
-
-    /* */
-    String payload = reader.readLine();
-    if (payload == null || "".equals(payload))
-      throw new InvalidSocketConnectionException("Required payload not provided");
-    return new McuInstructions(option, payload);
-  }
-
-  private boolean doesRequirePayloadProcessing(McuOptions options)
-      throws InvalidSocketConnectionException {
-    switch (options) {
-      case McuOptions.NOTIFY:
-        return true;
-      case McuOptions.REGISTER:
-        return false;
-      case McuOptions.REREGISTER:
-        return true;
-      case McuOptions.PING:
-        return false;
-      case McuOptions.UPDATE:
-        return true;
-      case McuOptions.NIL:
-        return false;
-      default:
-        throw new InvalidSocketConnectionException("Invalid option provided");
-    }
-  }
-
-  private void acknowledge(BufferedWriter writer) throws IOException {
-    writer.write(0);
-    writer.newLine();
-    writer.flush();
   }
 
   private boolean send(UUID clientId, String message) {
@@ -224,6 +165,7 @@ public class McuSocket {
 
     try {
       writer.write(message);
+      writer.newLine();
       writer.flush();
       return true;
     } catch (IOException e) {
@@ -231,11 +173,5 @@ public class McuSocket {
       System.out.println("Failed to send message to client " + clientId.toString());
       return false;
     }
-  }
-
-  public boolean isConnected(UUID clientId) {
-    if (!connections.containsKey(clientId)) return false;
-
-    return send(clientId, "PING");
   }
 }

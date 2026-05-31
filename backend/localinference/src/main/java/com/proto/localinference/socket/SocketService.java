@@ -1,12 +1,12 @@
 package com.proto.localinference.socket;
 
-import com.proto.localinference.dto.McuInstructions;
+import com.proto.localinference.dto.McuArg;
 import com.proto.localinference.exceptions.InvalidSocketConnectionException;
+import com.proto.localinference.exceptions.UnexpectedException;
 import com.proto.localinference.services.McuService;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.util.Optional;
 import java.util.UUID;
 import org.springframework.stereotype.Service;
 
@@ -15,9 +15,7 @@ import org.springframework.stereotype.Service;
 public class SocketService {
 
   private static final int UUID_LENGTH = 36;
-  private static final int CHUNK_SIZE = 512; // max chars per payload read
-  private static final int MAX_PAYLOAD_CT = 512; // 512 x 512 bytes
-  private static final int INSTRUCTION_MAX_LEN = 64; // 64 chars
+  private static final int DELIMITER = ':';
 
   private McuService service;
 
@@ -31,68 +29,114 @@ public class SocketService {
     char[] idBuf = new char[UUID_LENGTH];
     int read = reader.read(idBuf, 0, UUID_LENGTH);
 
-    // \r\n will not be considered a valid terminators. windows sucks
-    if (reader.read() != '\n')
-      throw new InvalidSocketConnectionException("Missing new line char after UUID");
-
     UUID clientId;
-    if (read == UUID_LENGTH) clientId = parseUUID(new String(idBuf));
-    else throw new InvalidSocketConnectionException("Invalid UUID provided");
+    if (read != UUID_LENGTH) {
+      reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.InvalidUuid);
+    }
 
+    clientId = parseUUID(new String(idBuf));
     if (clientId == null || service.getClient(clientId).isEmpty()) {
       reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.InvalidUuid);
+    }
+
+    if (reader.read() != DELIMITER) {
+      reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.ImproperDelimiterUsed);
     }
 
     return clientId;
+  }
+
+  public void reject(BufferedWriter writer) throws IOException {
+    writer.write(1);
+    writer.flush();
+    writer.close();
+  }
+
+  public void acknowledge(BufferedWriter writer) throws IOException {
+    writer.write(0);
+    writer.newLine();
+    writer.flush();
+  }
+
+  /**
+   * Reads the next 2 lines of the socket stream. Should contain a {@code McuOption} on the first
+   * line, followed by a second line, if required, that contains the rest of the payload context
+   *
+   * @param reader
+   * @param writer
+   * @return
+   * @throws IOException
+   * @throws IllegalArgumentException
+   */
+  public McuArg readInstructionsAndPayloadIfAny(BufferedReader reader, BufferedWriter writer)
+      throws IOException, InvalidSocketConnectionException {
+    // Line 1
+    String line = reader.readLine();
+    if (line == null) {
+      reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.MissingMcuOption);
+    }
+    McuOption opt;
+    try {
+      opt = McuOption.valueOf(line);
+    } catch (IllegalArgumentException e) {
+      reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.MissingMcuOption);
+    }
+    if (!doesRequirePayloadProcessing(opt)) return new McuArg(opt, "");
+
+    // Line 2
+    line = reader.readLine();
+    if (line == null || "".equals(line)) {
+      reject(writer);
+      throw new InvalidSocketConnectionException(
+          InvalidSocketConnectionException.SocketErrorOption.MissingRequiredContextLine);
+    }
+
+    return new McuArg(opt, line);
+  }
+
+  /**
+   * Dictates whether or not to expect a line following an {@code McuOption} value that contains
+   * requires mandatory information to be provided.
+   *
+   * @param options
+   * @return
+   * @throws InvalidSocketConnectionException
+   */
+  private boolean doesRequirePayloadProcessing(McuOption options) throws UnexpectedException {
+    switch (options) {
+      case McuOption.NOTIFY:
+        return true;
+      case McuOption.REREGISTER:
+        return true;
+      case McuOption.UPDATE:
+        return true;
+      case McuOption.REGISTER:
+        return false;
+      case McuOption.PING:
+        return false;
+      case McuOption.NIL:
+        return false;
+      default:
+        throw new UnexpectedException(
+            "SocketService.doesRequirePayloadProcessing() did not expect to reach default case");
+    }
   }
 
   private UUID parseUUID(String s) throws InvalidSocketConnectionException {
     try {
       return UUID.fromString(s);
     } catch (IllegalArgumentException e) {
-      throw new InvalidSocketConnectionException("Invalid UUID provided");
+      return null;
     }
-  }
-
-  public Optional<McuInstructions> parseInstructionCodeAndDetails(
-      UUID clientId, BufferedReader reader, BufferedWriter writer) throws IOException {
-
-    StringBuilder sb = new StringBuilder(INSTRUCTION_MAX_LEN);
-    McuOptions instruction = McuOptions.NIL;
-
-    int c;
-    while (sb.length() < INSTRUCTION_MAX_LEN) {
-      c = reader.read();
-      if (c == -1) return Optional.empty(); // stream ended
-      if (c == '\n') {
-        try {
-          instruction = McuOptions.valueOf(sb.toString().trim());
-        } catch (IllegalArgumentException e) {
-          return Optional.empty(); // invalid instruction
-        }
-        break; // exit the while
-      }
-      sb.append((char) c); // cast int to char
-    }
-
-    if (instruction == McuOptions.NIL) return Optional.empty();
-
-    sb = new StringBuilder(CHUNK_SIZE);
-    char[] cBuf = new char[CHUNK_SIZE];
-    while ((c = reader.read(cBuf, 0, CHUNK_SIZE)) != -1) {
-      sb.append(cBuf, 0, c);
-      if (sb.length() >= MAX_PAYLOAD_CT * CHUNK_SIZE) break;
-      // for PING there's no payload so break on empty read
-      if (c < CHUNK_SIZE) break;
-    }
-
-    return Optional.of(new McuInstructions(instruction, sb.toString()));
-  }
-
-  public void reject(BufferedWriter writer) throws IOException, InvalidSocketConnectionException {
-    writer.write(1);
-    writer.flush();
-    writer.close();
-    throw new InvalidSocketConnectionException("Server refused to continue connection");
   }
 }
