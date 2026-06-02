@@ -384,7 +384,7 @@ static VOID App_TCP_Thread_Entry(ULONG thread_input)
     }
 
     /* append the message to send into the packet */
-    ret = nx_packet_data_append(data_packet, (VOID *)DEFAULT_MESSAGE, sizeof(DEFAULT_MESSAGE), &NxAppPool, TX_WAIT_FOREVER);
+    ret = nx_packet_data_append(data_packet, (VOID *)DEFAULT_MESSAGE, sizeof(DEFAULT_MESSAGE)-1, &NxAppPool, TX_WAIT_FOREVER);
 
     if (ret != NX_SUCCESS)
     {

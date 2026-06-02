@@ -12,12 +12,6 @@ enable_language(C CXX ASM)
 
 set(BUILD_UNIT_0_NAME Nx_TCP_Echo_Client)
 
-# CUSTOM LOGIC
-
-add_subdirectory("../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
-
-# CUSTOM LOGIC
-
 # Create an executable object type
 add_executable(${BUILD_UNIT_0_NAME})
 
@@ -47,8 +41,11 @@ target_include_directories(${BUILD_UNIT_0_NAME} PRIVATE
 
 # CUSTOM LOGIC
 
+add_subdirectory("../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
+
 target_link_libraries(${CMAKE_PROJECT_NAME}
     # Add user defined libraries
+    PRIVATE
     my_app_lib
 )
 
