@@ -1,46 +1,63 @@
 # This is LocalInference
 
-## Set up:
-
-In `backend/`, create a `.env` file with the following parameters:
-```
-DB_URL=postgresql+asyncpg://postgres:party@li-pgsql-db:5432/postgres
-JWT_SECRET=f6c00a8672387df665c7dfb8de17ecd7
-JWT_ALGORITHM=HS256
-```
-
-Next, in `frontend/`, create a `.env.dev` file with the following parameters:
-```
-VITE_API_BASE_URL=http://127.0.0.1:8000
-```
-
 ## NOTE:
 Must have docker installed first.
 
-# Building production Docker image 
-in .env, set:
-`PROFILE=prod`
-then run:
-`docker compose -f compose.yaml -f compose.prod.yaml up -d`
+Edit `.env` file to the correct profile as it dictates docker's run-time behavior: 
+- dev
+- test
+- prod 
 
-# Running dev container
-<!-- TODO! -->
+Currently only dev & prod are supported.
+
+### Setting up a whitelisted UUID
+
+For prod
+```sh
+curl -X POST "https://website.com/mcumanager/api/mcu/register" \
+        -H "Content-Type: application/json" \
+        -d '{
+      "uuid": "dd1d2e0c-504e-445c-8e0e-136e392ef4f3"
+    }'
+
+```
+
+For dev or use swagger ui `http://127.0.0.1:8080/swagger-ui/index.html#/`
+```sh
+curl -X POST "http://127.0.0.1/mcu/register" \
+        -H "Content-Type: application/json" \
+        -d '{
+      "uuid": "dd1d2e0c-504e-445c-8e0e-136e392ef4f3"
+    }'
+
+```
+
+## Set up for development:
 Ensure that in `.env` PROFILE=`dev` then run
 `docker compose up` 
     `-d` (if you want to run detached)
 
 Visit http://127.0.0.1:8080/swagger-ui/index.html#/ and make a call to /mcu/registration and add the UUID to whitelist
 
+## Set up for production:
+Ensure that in `.env` PROFILE=`prod` then run
+
+`docker compose up` 
+    `-d` (if you want to run detached)
+
+
+
 ### Socket demo
+See [this java file](backend/SocketClient.java) to test out 
+
 Implements an API to connect to MCU, opens socket for communication and provides a sample client file (requires manual execution of client).
 
-The backend will automatically spin up a 24/7 socket, accepting limited number of MCU devices during the server's lifetime. (restarting server will enable a new connection, working on a more robust solution)
+The backend will automatically spin up a 24/7 socket, accepting limited number of MCU devices during the server's lifetime. 
 
 
 # Todo
 
-Manually register MCU 
-    -> user registers MAC address (UUID) [as whitelist]
+
 
 MCU makes a connection to server (socket con, 24/7 no-drop/timeout)
     -> on first registration, MCU stores provided `SECRET_KEY` used to reconnect if something were to change

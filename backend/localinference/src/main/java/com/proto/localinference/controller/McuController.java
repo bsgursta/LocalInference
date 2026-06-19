@@ -1,10 +1,10 @@
 package com.proto.localinference.controller;
 
 import com.proto.localinference.dto.ClientDetailsRecord;
-import com.proto.localinference.dto.RegisterMcu;
+import com.proto.localinference.dto.requestarguments.RegisterMcuRecord;
 import com.proto.localinference.services.McuService;
 import com.proto.localinference.socket.McuSocket;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import jakarta.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/mcu")
-@SecurityRequirement(name = "accessToken")
+// @SecurityRequirement(name = "accessToken")
 public class McuController {
 
   McuService service;
@@ -37,9 +37,16 @@ public class McuController {
     return ResponseEntity.ok(mcuList);
   }
 
+  /**
+   * Registers a new Mcu
+   *
+   * @param mcu
+   * @return
+   */
   @PostMapping("/register")
-  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(@RequestBody RegisterMcu mcu) {
-    var res = service.manuallyRegisterMcu(mcu.uuid());
+  public ResponseEntity<ClientDetailsRecord> doManualMcuRegistration(
+      @RequestBody @Valid RegisterMcuRecord mcu) {
+    var res = service.registerMcu(mcu.id());
     return res.isEmpty() ? ResponseEntity.badRequest().build() : ResponseEntity.ok(res.get());
   }
 
@@ -57,7 +64,7 @@ public class McuController {
   // }
 
   @PostMapping("/{macAddress}/ping")
-  public ResponseEntity<Void> pingMcu(@PathVariable UUID macAddress) {
+  public ResponseEntity<Void> pingMcu(@PathVariable @Valid UUID macAddress) {
     return mcuSocket.isConnected(macAddress)
         ? ResponseEntity.ok().build()
         : ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).build();

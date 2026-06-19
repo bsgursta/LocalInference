@@ -34,9 +34,9 @@ public class SpringSecurityConfig {
             auth ->
                 auth.requestMatchers("/", "/auth/**") /* prod - required */
                     .permitAll()
-                    // .requestMatchers(
-                    // "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**") /* testing api */
-                    // .permitAll()
+                    .requestMatchers(
+                        "/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**") /* testing api */
+                    .permitAll()
                     .requestMatchers("/mcu/**") /* testing only */
                     .permitAll()
                     // .requestMatchers("/index.html", "/app.js") /* testing frontend */

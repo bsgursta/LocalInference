@@ -1,7 +1,8 @@
 package com.proto.localinference.socket;
 
-import com.proto.localinference.dto.McuArg;
-import com.proto.localinference.exceptions.InvalidSocketConnectionException;
+import com.proto.localinference.dto.McuArgRecord;
+import com.proto.localinference.dto.RegisterResult;
+import com.proto.localinference.exceptions.InvalidSocketRequestException;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import java.io.BufferedReader;
@@ -9,10 +10,11 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 import java.util.UUID;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -28,30 +30,31 @@ public class McuSocket {
   @Value(value = "${socket.port}")
   private int PORT;
 
-  /*
-  consider this if mcu can handle encryption
+  private static final int SO_TIMEOUT_MS = 7500;
+  private static final int SO_HEALTHCHECK_TIMEOUT_MS = 45000;
 
-  SSLServerSocketFactory factory = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
-  server = factory.createServerSocket(PORT);
-  */
-
-  private static final int SO_TIMEOUT_MS = 5000; // drop connection if silent for 5s
-
+  /** Live writer handles, keyed by MCU UUID. */
   private final ConcurrentHashMap<UUID, BufferedWriter> connections = new ConcurrentHashMap<>();
 
-  private ServerSocket server;
-  private SocketService service;
+  /**
+   * Per-connection queue of server-initiated push packets. Populated via {@link #pushToMcu};
+   * drained after each MCU request is acked.
+   */
+  private final ConcurrentHashMap<UUID, BlockingQueue<McuPushPacket>> pushQueues =
+      new ConcurrentHashMap<>();
 
-  private ExecutorService acceptor = Executors.newSingleThreadExecutor();
-  private ExecutorService handlers =
+  private ServerSocket server;
+  private final SocketService service;
+
+  private final ExecutorService acceptor = Executors.newSingleThreadExecutor();
+  private final ExecutorService handlers =
       new ThreadPoolExecutor(
           1,
-          2, // core, max threads
+          2,
           60L,
           TimeUnit.SECONDS,
-          new LinkedBlockingQueue<>(100), // max 100 queued connections
-          new ThreadPoolExecutor.AbortPolicy() // reject beyond that
-          );
+          new LinkedBlockingQueue<>(100),
+          new ThreadPoolExecutor.AbortPolicy());
 
   public McuSocket(SocketService socketService) {
     this.service = socketService;
@@ -67,7 +70,6 @@ public class McuSocket {
     server.close();
     acceptor.shutdown();
     handlers.shutdown();
-    // close remaining living connections
     connections
         .values()
         .forEach(
@@ -79,99 +81,302 @@ public class McuSocket {
             });
   }
 
+  // ================================================================
+  // Socket loop
+  // ================================================================
+
   private void listen() {
     try {
       server = new ServerSocket(PORT);
-
       while (!server.isClosed()) {
         Socket con = server.accept();
         handlers.submit(() -> handleClient(con));
       }
     } catch (Exception e) {
-      System.out.println(e.getMessage());
+      System.out.println("Socket listener error: " + e.getMessage());
     }
-  }
-
-  public boolean isConnected(UUID clientId) {
-    return !connections.containsKey(clientId) ? false : send(clientId, "PING");
   }
 
   /**
-   * This is a new socket connection that is made. Incoming con must ALWAYS pass the following
-   * param: <br>
-   * {@code UUID}:{@code REGISTER_CON}\n <br>
-   * From then on, MCU may make any kind of request as long as it follows the pattern of:<br>
-   * {@code {UUID}}\n{@link McuOption @McuOptions}\n{@code {PAYLOAD}}\n
+   * Full lifecycle of one MCU connection.
    *
-   * @param con
+   * <h3>Handshake (once, under SO_TIMEOUT):</h3>
+   *
+   * <pre>
+   *   MCU -> SRV:  UUID:                    (36-char UUID + ':' delimiter)
+   *   MCU -> SRV:  REGISTER\n               (first-time connect)
+   *               or RECONNECT\n
+   *                  RECONNECT_KEY\n        (subsequent connects)
+   *   SRV -> MCU:  '0'                      (single char, no newline)
+   *   SRV -> MCU:  NEW_RECONNECT_KEY        (36 chars, no newline; MCU reads fixed 36)
+   * </pre>
+   *
+   * <h3>Per-message loop (MCU-initiated):</h3>
+   *
+   * <pre>
+   *   MCU -> SRV:  COMMAND\n
+   *   MCU -> SRV:  PAYLOAD\n                (only if command requires it)
+   *   SRV -> MCU:  '0' or '1'              (single char, no newline)
+   *   [server push packets, if any]
+   * </pre>
    */
   private void handleClient(Socket con) {
     UUID clientId = null;
+    BufferedReader reader = null;
+    BufferedWriter writer = null;
+
     try {
-      con.setSoTimeout(SO_TIMEOUT_MS); // 5 second to verify identity else close con
-      System.out.println("inc con from " + con.getRemoteSocketAddress().toString());
+      con.setSoTimeout(SO_TIMEOUT_MS);
+      System.out.println("Incoming connection from " + con.getRemoteSocketAddress());
 
-      BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-      BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(con.getOutputStream()));
+      reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+      writer = new BufferedWriter(new OutputStreamWriter(con.getOutputStream()));
 
-      /* read line 1 for uuid, then read line 2 & 3 for args and context */
-      clientId = service.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
-      McuArg arg = service.readInstructionsAndPayloadIfAny(reader, writer);
+      // Handshake
+      clientId = service.parseUuid(reader);
+      McuArgRecord handshakeArg = service.parseCommandAndPayload(reader);
 
-      if (arg.instruction() != McuOption.REGISTER && arg.instruction() != McuOption.REREGISTER) {
-        service.reject(writer);
-        throw new InvalidSocketConnectionException(
-            InvalidSocketConnectionException.SocketErrorOption.ImproperSequenceOfEvents);
-      }
+      HandshakeResult handshake =
+          processAuthentication(clientId, handshakeArg, con.getInetAddress(), writer);
 
-      con.setSoTimeout(0);
+      con.setSoTimeout(SO_HEALTHCHECK_TIMEOUT_MS);
       connections.put(clientId, writer);
-      service.acknowledge(writer);
+      pushQueues.put(clientId, new LinkedBlockingQueue<>());
 
-      /* handle other instructions */
+      acknowledge(writer);
+      writer.write(handshake.reconnectKey().toString()); /* UUID len */
+      writer.flush();
+
+      System.out.println("Client " + clientId + " successfully authenticated");
+
+      // Main loop
       while (!con.isClosed()) {
-        clientId = service.validateMcuConnectionAndReturnClientIdOrRejectCon(reader, writer);
-        arg = service.readInstructionsAndPayloadIfAny(reader, writer);
+        McuArgRecord arg = service.parseCommandAndPayload(reader);
 
         System.out.println(
             "Client "
-                + clientId.toString()
-                + " requested "
-                + arg.instruction().toString()
-                + (arg.details() == null ? "" : " with args: " + arg.details()));
+                + clientId
+                + " -> "
+                + arg.command()
+                + (arg.details().isEmpty() ? " [no payload]" : " [" + arg.details() + "]"));
 
-        service.acknowledge(writer);
+        handleCommand(clientId, arg, writer);
+        flushPendingPushes(clientId, reader, writer);
       }
-      System.out.println("finished loop");
 
-    } catch (InvalidSocketConnectionException e) {
-      System.out.println(e.getMessage());
-    } catch (IllegalArgumentException e) {
-      System.out.println(e.getMessage());
-    } catch (SocketException e) {
-      System.out.println(e.getMessage());
-    } catch (IOException e) {
-      System.out.println(e.getMessage());
+    } catch (Exception e) {
+      System.out.println("Connection error [" + clientId + "]: " + e.getMessage());
+      try {
+        if (writer != null) reject(writer);
+      } catch (IOException ignore) {
+        System.out.println("Failed to send rejection to client");
+      }
     } finally {
-      connections.remove(clientId);
-      System.out.println("Con was closed");
+      if (clientId != null) {
+        connections.remove(clientId);
+        pushQueues.remove(clientId);
+      }
+      try {
+        con.close();
+      } catch (IOException e) {
+        System.out.println("Failed to close socket for " + clientId);
+      }
+      System.out.println("Connection closed: " + clientId);
     }
   }
 
+  /**
+   * Hook for first-ever-connection behavior (e.g. push an initial UPDATE with the latest model,
+   * send a welcome NOTIFY, log a provisioning event, etc).
+   *
+   * <p>Called only after the connection is fully registered in {@code connections} / {@code
+   * pushQueues} and the handshake ack has been sent, so any push enqueued here is safe to land on
+   * the very next iteration of the main loop.
+   *
+   * <p>TODO: implement first-connection behavior.
+   */
+  private void onFirstConnection(UUID clientId) {
+    System.out.println("Client " + clientId + " connected for the first time");
+    // TODO: e.g. pushToMcu(clientId, McuCommand.UPDATE, currentModelPayload);
+  }
+
+  /** Handles a single MCU-initiated command and sends exactly one ack. */
+  private void handleCommand(UUID clientId, McuArgRecord arg, BufferedWriter writer)
+      throws IOException, InvalidSocketRequestException {
+    switch (arg.command()) {
+      case REGISTER, RECONNECT -> {
+        // Only valid during handshake
+        throw new InvalidSocketRequestException(
+            InvalidSocketRequestException.SocketErrorOption.ImproperSequenceOfEvents);
+      }
+      case GPS -> {
+        service.persistGpsPosition(clientId, arg.details());
+        acknowledge(writer);
+      }
+      case UPDATE -> {
+        // Server-initiated only - MCU must not send these
+        throw new InvalidSocketRequestException(
+            InvalidSocketRequestException.SocketErrorOption.ImproperSequenceOfEvents);
+      }
+      case NOTIFY -> {
+        // TODO: process incident notification (arg.details() carries the payload)
+        acknowledge(writer);
+      }
+      case HEALTHCHECK -> {
+        acknowledge(writer);
+      }
+      case AUDIO_STREAM -> {
+        // TODO: handle audio stream chunk (arg.details() carries the payload)
+        acknowledge(writer);
+      }
+      default ->
+          throw new InvalidSocketRequestException(
+              InvalidSocketRequestException.SocketErrorOption.ImproperSequenceOfEvents);
+    }
+  }
+
+  /**
+   * Drains the push queue for this client, sending each pending packet in order. An IOException
+   * from any send propagates up to kill the connection.
+   */
+  private void flushPendingPushes(UUID clientId, BufferedReader reader, BufferedWriter writer)
+      throws IOException {
+    BlockingQueue<McuPushPacket> queue = pushQueues.get(clientId);
+    if (queue == null || queue.isEmpty()) return;
+
+    McuPushPacket push;
+    while ((push = queue.poll()) != null) {
+      sendPush(clientId, push, reader, writer);
+    }
+  }
+
+  /**
+   * Sends a single server-initiated push and waits for the MCU's single-char ack.
+   *
+   * <h3>Wire format (server → MCU):</h3>
+   *
+   * <pre>
+   *   INC\n
+   *   COMMAND\n
+   *   LENGTH\n       (decimal char count of payload; MCU readLines this to get the number)
+   *   [PAYLOAD]      (exactly LENGTH chars, no terminator - only present when LENGTH > 0)
+   * </pre>
+   *
+   * <h3>MCU response:</h3>
+   *
+   * <pre>
+   *   '0' or '1'     (single char, no newline)
+   * </pre>
+   */
+  private void sendPush(
+      UUID clientId, McuPushPacket push, BufferedReader reader, BufferedWriter writer)
+      throws IOException {
+    String payload = push.payload() != null ? push.payload() : "";
+    int payloadLength = payload.length();
+
+    writer.write("INC");
+    writer.newLine();
+    writer.write(push.command().name());
+    writer.newLine();
+    writer.write(String.valueOf(payloadLength));
+    writer.newLine();
+    if (payloadLength > 0) {
+      writer.write(payload);
+    }
+    writer.flush();
+
+    int mcuAck = reader.read();
+    if (mcuAck != '0') {
+      System.out.println("MCU " + clientId + " rejected push: " + push.command());
+    }
+  }
+
+  // ================================================================
+  // Handshake helpers
+  // ================================================================
+
+  /** Reconnect key plus whether this handshake was the MCU's first-ever connection. */
+  private record HandshakeResult(UUID reconnectKey, boolean firstConnection) {}
+
+  private HandshakeResult processAuthentication(
+      UUID clientId, McuArgRecord arg, InetAddress ipAddress, BufferedWriter writer)
+      throws IOException {
+    return switch (arg.command()) {
+      case REGISTER -> {
+        RegisterResult result =
+            service
+                .processRegister(clientId, ipAddress)
+                .orElseThrow(
+                    () ->
+                        new InvalidSocketRequestException(
+                            InvalidSocketRequestException.SocketErrorOption
+                                .ImproperSequenceOfEvents));
+        yield new HandshakeResult(result.reconnectKey(), result.firstConnection());
+      }
+      case RECONNECT -> {
+        UUID reconnectKey =
+            service
+                .processReconnect(clientId, arg.details(), ipAddress)
+                .orElseThrow(
+                    () ->
+                        new InvalidSocketRequestException(
+                            InvalidSocketRequestException.SocketErrorOption
+                                .ImproperSequenceOfEvents));
+        yield new HandshakeResult(reconnectKey, false);
+      }
+      default -> {
+        throw new InvalidSocketRequestException(
+            InvalidSocketRequestException.SocketErrorOption.ImproperSequenceOfEvents);
+      }
+    };
+  }
+
   private boolean send(UUID clientId, String message) {
-    /* send info to client */
     BufferedWriter writer = connections.get(clientId);
     if (writer == null) return false;
-
     try {
       writer.write(message);
-      writer.newLine();
       writer.flush();
       return true;
     } catch (IOException e) {
       connections.remove(clientId);
-      System.out.println("Failed to send message to client " + clientId.toString());
+      System.out.println("Failed to send to client " + clientId);
       return false;
     }
+  }
+
+  // ===================================================
+  // Ack / reject primitives
+  // ===================================================
+
+  private void acknowledge(BufferedWriter writer) throws IOException {
+    if (writer == null) return;
+    writer.write('0');
+    writer.flush();
+  }
+
+  private void reject(BufferedWriter writer) throws IOException {
+    if (writer == null) return;
+    writer.write('1');
+    writer.flush();
+  }
+
+  // ================================================================
+  // Public API - called by server-side code (controllers, services)
+  // ================================================================
+
+  /** Returns true if the MCU is connected and the socket is alive. */
+  public boolean isConnected(UUID clientId) {
+    return connections.containsKey(clientId) && send(clientId, "PING");
+  }
+
+  /**
+   * Enqueues a server-initiated command for delivery to the specified MCU. Delivered after the
+   * server acks the MCU's next message. Returns false if the MCU is not currently connected.
+   */
+  public boolean pushToMcu(UUID clientId, McuCommand command, String payload) {
+    BlockingQueue<McuPushPacket> queue = pushQueues.get(clientId);
+    if (queue == null) return false;
+    return queue.offer(new McuPushPacket(command, payload));
   }
 }

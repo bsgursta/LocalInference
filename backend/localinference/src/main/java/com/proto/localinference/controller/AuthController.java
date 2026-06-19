@@ -1,6 +1,6 @@
 package com.proto.localinference.controller;
 
-import com.proto.localinference.dto.AuthRecord;
+import com.proto.localinference.dto.requestarguments.AuthRecord;
 import com.proto.localinference.services.AuthService;
 import com.proto.localinference.services.JwtService;
 import jakarta.servlet.http.Cookie;
@@ -77,6 +77,8 @@ public class AuthController {
 
   /**
    * Used by the frontend to collect a new accessToken to use for auth
+   *
+   * <p>TODO: move refresh logic into securityFilterChain?
    *
    * @param request
    * @param response

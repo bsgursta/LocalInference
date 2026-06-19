@@ -4,75 +4,151 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
-import java.util.Scanner;
 
+/**
+ * Manual test client for McuSocket. Sends one request at a time and blocks until the corresponding
+ * server response is fully read before moving on to the next
+ *
+ * <p>Covers: REGISTER, RECONNECT, NOTIFY, HEALTHCHECK
+ */
 public class SocketClient {
 
+  private static final String HOST = "127.0.0.1";
+  private static final int PORT = 9000;
+  private static final int UUID_LENGTH = 36;
+
+  private static final String MCU_UUID = "dd1d2e0c-504e-445c-8e0e-136e392ef4f3";
+  private static final String RECONNECT_KEY = "34eb893b-64a9-464f-be33-ea22234fbb6a";
+
+  // REGISTER or RECONNECT
+  private static final boolean USE_RECONNECT = true;
+
+  // How many NOTIFY/HEALTHCHECK requests to send after the initial handshake.
+  private static final int REQUEST_COUNT = 10;
+
+  private final BufferedReader reader;
+  private final BufferedWriter writer;
+
   public static void main(String[] args) {
-    try (Socket socket = new Socket("127.0.0.1", 9000)) {
+    try (Socket socket = new Socket(HOST, PORT)) {
+      SocketClient client =
+          new SocketClient(
+              new BufferedReader(new InputStreamReader(socket.getInputStream())),
+              new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())));
 
-      BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+      client.runHandshake();
+      client.runRequestLoop();
 
-      /* create device UUID */
-      // HttpClient client = HttpClient.newHttpClient();
-      // HttpRequest request =
-      //     HttpRequest.newBuilder()
-      //         .uri(URI.create("http://127.0.0.1:8080/mcu"))
-      //         .POST(HttpRequest.BodyPublishers.ofString(""))
-      //         .build();
-
-      // HttpResponse<String> id = client.send(request, HttpResponse.BodyHandlers.ofString());
-      String uuid = "dd1d2e0c-504e-445c-8e0e-136e392ef4f3";
-      System.out.println(uuid);
-
-      /* send message over socket, identifying self by uuid */
-      String msg = "REGISTER";
-
-      writer.write(uuid.toString() + '\n');
-      writer.write(msg + '\n');
-      writer.flush();
-
-      for (int i = 1; i < 100; i++) {
-        writer.write(uuid.toString());
-        writer.newLine();
-        writer.write("NOTIFY");
-        writer.newLine();
-        writer.write("Line " + (char) ((i % 10) + 'a'));
-        writer.newLine();
-        writer.flush();
-      }
-
-      /* read server response */
-      BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
-      Thread listener =
-          new Thread(
-              () -> {
-                try {
-                  String line;
-                  while ((line = reader.readLine()) != null) {
-                    System.out.println("Server: " + line);
-                  }
-                } catch (IOException e) {
-                  System.out.println("Connection closed: " + e.getMessage());
-                }
-              });
-      listener.setDaemon(true);
-      listener.start();
-
-      // main thread blocks here — type messages to send, "quit" to exit
-      Scanner scanner = new Scanner(System.in);
-      while (scanner.hasNextLine()) {
-        String input = scanner.nextLine();
-        if ("quit".equalsIgnoreCase(input)) break;
-        writer.write(input);
-        writer.newLine();
-        writer.flush();
-      }
-      scanner.close();
-
-    } catch (Exception e) {
-      System.out.println(e.getMessage());
+    } catch (IOException e) {
+      System.out.println("Connection failed: " + e.getMessage());
     }
+  }
+
+  public SocketClient(BufferedReader reader, BufferedWriter writer) {
+    this.reader = reader;
+    this.writer = writer;
+  }
+
+  // ================================================================
+  // Handshake
+  // ================================================================
+
+  /**
+   * Sends UUID + ':' + (REGISTER or RECONNECT), per {@link #USE_RECONNECT}, then blocks for the
+   * single-char ack and the 36-char reconnect key the server returns on success.
+   */
+  private void runHandshake() throws IOException {
+    System.out.println("--- Handshake: " + (USE_RECONNECT ? "RECONNECT" : "REGISTER") + " ---");
+
+    writer.write(MCU_UUID);
+    writer.write(':');
+
+    if (USE_RECONNECT) {
+      writer.write("RECONNECT");
+      writer.newLine();
+      writer.write(RECONNECT_KEY);
+    } else {
+      writer.write("REGISTER");
+    }
+    writer.newLine();
+    writer.flush();
+
+    char ack = readAck();
+    System.out.println("Handshake ack: " + ack);
+
+    if (ack != '0') {
+      throw new IOException("Handshake rejected by server");
+    }
+
+    String newReconnectKey = readFixed(UUID_LENGTH);
+    System.out.println("New reconnect key: " + newReconnectKey);
+  }
+
+  // ================================================================
+  // request loop
+  // ================================================================
+
+  /**
+   * Alternates NOTIFY (with a payload) and HEALTHCHECK (no payload), waiting for the ack after each
+   * before sending the next
+   */
+  private void runRequestLoop() throws IOException {
+    System.out.println("--- Request loop ---");
+
+    for (int i = 1; i <= REQUEST_COUNT; i++) {
+      boolean sendHealthcheck = i % 5 == 0;
+
+      char ack = sendHealthcheck ? sendHealthcheck() : sendNotify("Incident #" + i);
+
+      System.out.println(
+          "["
+              + i
+              + "/"
+              + REQUEST_COUNT
+              + "] "
+              + (sendHealthcheck ? "HEALTHCHECK" : "NOTIFY")
+              + " -> ack: "
+              + ack);
+
+      if (ack != '0') {
+        System.out.println("Server rejected request " + i + " - stopping.");
+        break;
+      }
+    }
+  }
+
+  /** Sends NOTIFY + payload, returns the single-char ack. */
+  private char sendNotify(String payload) throws IOException {
+    writer.write("NOTIFY");
+    writer.newLine();
+    writer.write(payload);
+    writer.newLine();
+    writer.flush();
+    return readAck();
+  }
+
+  /** Sends HEALTHCHECK (no payload), returns the single-char ack. */
+  private char sendHealthcheck() throws IOException {
+    writer.write("HEALTHCHECK");
+    writer.newLine();
+    writer.flush();
+    return readAck();
+  }
+
+  // ================================================================
+  // Read helpers
+  // ================================================================
+
+  private char readAck() throws IOException {
+    int c = reader.read();
+    if (c == -1) throw new IOException("Connection closed while waiting for ack");
+    return (char) c;
+  }
+
+  private String readFixed(int length) throws IOException {
+    char[] buf = new char[length];
+    int read = reader.read(buf, 0, length);
+    if (read != length) throw new IOException("Expected " + length + " chars, got " + read);
+    return new String(buf);
   }
 }

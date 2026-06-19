@@ -1,6 +1,6 @@
 package com.proto.localinference.services;
 
-import com.proto.localinference.dto.AuthRecord;
+import com.proto.localinference.dto.requestarguments.AuthRecord;
 import com.proto.localinference.exceptions.UsernameIsTakenException;
 import com.proto.localinference.model.User;
 import com.proto.localinference.repository.UserRepository;

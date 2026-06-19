@@ -1,8 +1,8 @@
 package com.proto.localinference.exceptions;
 
-public class InvalidSocketConnectionException extends RuntimeException {
+public class InvalidSocketRequestException extends RuntimeException {
 
-  public InvalidSocketConnectionException(SocketErrorOption opt) {
+  public InvalidSocketRequestException(SocketErrorOption opt) {
     super("Failed to validate socket connection: " + getErrorMessage(opt));
   }
 
@@ -12,6 +12,7 @@ public class InvalidSocketConnectionException extends RuntimeException {
     MissingMcuOption,
     MissingRequiredContextLine,
     ImproperSequenceOfEvents,
+    EOF,
   }
 
   private static String getErrorMessage(SocketErrorOption opt) {
@@ -24,6 +25,8 @@ public class InvalidSocketConnectionException extends RuntimeException {
         return "No McuOptions provided";
       case SocketErrorOption.MissingRequiredContextLine:
         return "Required payload not provided";
+      case SocketErrorOption.EOF:
+        return "EOF reached";
       case SocketErrorOption.ImproperSequenceOfEvents:
         return "Provided option is not of REGISTER/REREGISTER";
       default:
