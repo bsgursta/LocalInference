@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM dhi.io/eclipse-temurin:25-jdk-alpine3.22-dev AS builder
+FROM dhi.io/eclipse-temurin:25-jdk-alpine-dev AS builder
 
 WORKDIR /build
 
@@ -16,7 +16,7 @@ RUN mvn clean package -P prod -DskipTests
 
 
 # Stage 2: Runtime
-FROM dhi.io/eclipse-temurin:25-alpine3.22
+FROM dhi.io/eclipse-temurin:25-alpine
 
 WORKDIR /server
 
