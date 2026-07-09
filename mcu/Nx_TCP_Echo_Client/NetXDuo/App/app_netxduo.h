@@ -89,9 +89,9 @@ UINT MX_NetXDuo_Init(VOID *memory_ptr);
 
 #define NULL_ADDRESS             0
 
-#define DEFAULT_PORT             9000
+#define DEFAULT_PORT             5000
 #define TCP_SERVER_PORT          DEFAULT_PORT
-#define TCP_SERVER_ADDRESS       IP_ADDRESS(159, 223, 170, 57)
+#define TCP_SERVER_ADDRESS       IP_ADDRESS(192,168,1,241) //192.168.1.246
 
 #define MAX_PACKET_COUNT         100
 #define DEFAULT_MESSAGE          "dd1d2e0c-504e-445c-8e0e-136e392ef4f3\nREGISTER\n"

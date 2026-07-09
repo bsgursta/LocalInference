@@ -1,4 +1,0 @@
-Build Instructions:
-    - Be inside the mcu folder
-    - CTRL + SHIFT + P -> CMAKE: delete cache and reconfig
-    - F7
