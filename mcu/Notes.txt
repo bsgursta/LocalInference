@@ -1,2 +1,0 @@
-- N6 has no internal flash. uses offboard SRAM
-- I swapped the boot pins to get the debugger to work.
