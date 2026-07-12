@@ -1,7 +1,7 @@
 import socket
 
 # Configuration
-HOST = "192.168.1.241"  # Localhost
+HOST = "192.168.1.246"  # Localhost
 PORT = 5000        # Arbitrary non-privileged port
 
 def start_echo_server():
@@ -23,6 +23,7 @@ def start_echo_server():
                     data = conn.recv(1024)
                     if not data:
                         break
+                    print(data)
                     conn.sendall(data) # Echo data back
 
 if __name__ == "__main__":

@@ -26,6 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "main.h"
+#include "threadx_threads.h" 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

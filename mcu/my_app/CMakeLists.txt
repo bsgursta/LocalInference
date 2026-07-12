@@ -16,7 +16,7 @@ target_compile_definitions(my_app_lib PUBLIC
 )
 
 target_include_directories(my_app_lib PUBLIC
-    "include" 
+    "inc" 
     "${PROJECT_SOURCE_DIR}/Core/Inc"
     "${PROJECT_SOURCE_DIR}/Middlewares/ST/threadx/common/inc"
     "${PROJECT_SOURCE_DIR}/Middlewares/ST/threadx/ports/cortex_m55/gnu/inc"

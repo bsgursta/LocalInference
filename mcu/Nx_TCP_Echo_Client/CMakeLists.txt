@@ -43,8 +43,7 @@ target_include_directories(${BUILD_UNIT_0_NAME} PRIVATE
 
 add_subdirectory("../my_app" "${CMAKE_CURRENT_BINARY_DIR}/my_app_build")
 
-target_link_libraries(${CMAKE_PROJECT_NAME}
-    # Add user defined libraries
+target_link_libraries(${BUILD_UNIT_0_NAME}
     PRIVATE
     my_app_lib
 )

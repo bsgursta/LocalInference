@@ -252,8 +252,8 @@ UINT MX_NetXDuo_Init(VOID *memory_ptr)
 * @param ptr: user data
 * @retval none
 */
-static VOID ip_address_change_notify_callback(NX_IP *ip_instance, VOID *ptr)
-{
+static VOID ip_address_change_notify_callback(NX_IP *ip_instance, VOID *ptr) {
+
   /* USER CODE BEGIN ip_address_change_notify_callback */
   /* release the semaphore as soon as an IP address is available */
   if (nx_ip_address_get(&NetXDuoEthIpInstance, &IpAddress, &NetMask) != NX_SUCCESS)
@@ -361,6 +361,25 @@ static VOID App_TCP_Thread_Entry(ULONG thread_input)
   if (ret != NX_SUCCESS)
   {
     Error_Handler();
+  }
+
+  ULONG current_ip;
+  ULONG current_mask;
+  ret = nx_ip_address_get(&NetXDuoEthIpInstance, &current_ip, &current_mask);
+
+  if (ret == NX_SUCCESS)
+  {
+    printf("Static IP Configuration Active.\n");
+    printf("IP Address: %lu.%lu.%lu.%lu\n", 
+            (current_ip >> 24) & 0xFF, 
+            (current_ip >> 16) & 0xFF, 
+            (current_ip >> 8) & 0xFF, 
+            current_ip & 0xFF);
+    printf("Netmask:    %lu.%lu.%lu.%lu\n", 
+            (current_mask >> 24) & 0xFF, 
+            (current_mask >> 16) & 0xFF, 
+            (current_mask >> 8) & 0xFF, 
+            current_mask & 0xFF);
   }
 
   /* connect to the remote server on the specified port */
