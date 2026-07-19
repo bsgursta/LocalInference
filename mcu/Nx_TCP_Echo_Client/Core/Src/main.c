@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stm32n657xx.h"
 #include "string.h"
 #include "app_threadx.h"
 
