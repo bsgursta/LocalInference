@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 
 add_library(my_app_lib STATIC
-    src/threadx_threads.cpp
+    src/General/threadx_threads.cpp
+    src/Peripherals/gpio.cpp
 )
 
 target_compile_options(my_app_lib PUBLIC
